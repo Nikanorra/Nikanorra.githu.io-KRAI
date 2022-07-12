@@ -8,6 +8,7 @@ body {
 
 section {
   padding-top: 2%;
+  min-height: 100vh;
 }
 
 .container {
@@ -46,6 +47,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.grey-bg {
+  background: grey;
+  height: 100% !important;
+  min-height: 100% !important;
 }
 
 /*
@@ -278,6 +285,35 @@ img {
   -webkit-transform: rotate(40deg);
       -ms-transform: rotate(40deg);
           transform: rotate(40deg);
+}
+
+/*
+  ========================================
+  PROPOSITION
+  ========================================
+*/
+
+.proposition .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.proposition__list p {
+  margin-bottom: 25px;
+}
+
+.proposition__table {
+  background: #fff;
+  -webkit-box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+}
+
+.proposition__table .title {
+  background: black;
+  color: #fff;
 }
 
 @media screen and (max-width: 1100px) {
