@@ -575,6 +575,38 @@ img {
 }
 
 @media screen and (max-width: 550px) {
+  .circle__1,
+  .circle__2,
+  .circle__3,
+  .circle__4,
+  .circle__5,
+  .circle__6 {
+    min-height: 45px;
+    min-width: 45px;
+  }
+
+  .circle__3 {
+    min-height: 39px;
+    max-height: 39px;
+    min-width: 39px;
+    max-width: 39px;
+  }
+
+  .circle__4 {
+    min-height: 33px;
+    max-height: 33px;
+    min-width: 33px;
+    max-width: 33px;
+  }
+
+  .circle__5,
+  .circle__6 {
+    min-height: 31px;
+    max-height: 31px;
+    min-width: 31px;
+    max-width: 31px;
+  }
+
   .line-middle {
     -webkit-transform: rotate(-50deg);
         -ms-transform: rotate(-50deg);
