@@ -1,13 +1,12 @@
 body {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  color: blue;
+  color: #000;
   max-width: 100%;
   min-width: 320px;
 }
 
 section {
-  padding-top: 2%;
   min-height: 100vh;
 }
 
@@ -22,15 +21,16 @@ img {
 }
 
 .title {
-  color: black;
+  color: #000;
   font-weight: normal;
   text-transform: uppercase;
+  padding-top: 25px;
 }
 
 .paragraf {
   font-size: 23px;
   font-weight: 700;
-  color: black;
+  color: #000;
 }
 
 .paragraf span {
@@ -62,7 +62,7 @@ img {
 */
 
 .hero {
-  background: black;
+  background: #000;
 }
 
 .hero__wrap {
@@ -142,7 +142,7 @@ img {
 .circles__block-6 {
   position: absolute;
   height: 150px;
-  color: black;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,6 +298,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  font-size: 22px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .proposition__list p {
@@ -312,8 +320,79 @@ img {
 }
 
 .proposition__table .title {
-  background: black;
+  background: #000;
   color: #fff;
+  font-style: 15px;
+  font-weight: 700;
+}
+
+.table__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__content > div {
+  border-right: 1px dotted grey;
+}
+
+.table__content > div:last-child {
+  border-right: none;
+}
+
+.table__content .task > p {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.table__content .task div {
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.table__content .task div img {
+  width: 42px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.table__content .task div p {
+  background: grey;
+  border-radius: 50%;
+  max-width: 63px;
+  max-height: 63px;
+  min-width: 63px;
+  min-height: 63px;
+  font-size: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+
+.table__content .parametrs > p {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.table__content .parametrs li {
+  margin-bottom: 20px;
+}
+
+.table__content.gradient {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(12, 83, 149)), to(rgb(45, 182, 188)));
+  background: -o-linear-gradient(bottom, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
+  background: linear-gradient(0deg, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
 }
 
 @media screen and (max-width: 1100px) {
