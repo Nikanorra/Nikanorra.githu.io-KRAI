@@ -456,10 +456,59 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .proposition .proposition__table .content .grahf li img {
   width: 70%;
+}
+
+.proposition .proposition__table .content .grahf li .progressbar {
+  height: 20px;
+  width: 70%;
+  position: relative;
+}
+
+.proposition .proposition__table .content .grahf li .progressbar__bg {
+  height: 13px;
+  width: 100%;
+  background: #EAE6E5;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.proposition .proposition__table .content .grahf li .progressbar__border {
+  position: absolute;
+  height: 17px;
+  width: 95%;
+  border-right: 3px solid #000;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.proposition .proposition__table .content .grahf li .progressbar__border.third {
+  width: 75%;
+}
+
+.proposition .proposition__table .content .grahf li .progressbar__border.half {
+  width: 50%;
+}
+
+.proposition .proposition__table .content .grahf li .progressbar__scale {
+  background: #2DB6BB;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 5%;
 }
 
 .table__content.gradient {
