@@ -67,12 +67,6 @@ img {
           justify-content: center;
 }
 
-.grey-bg {
-  background: #EAE6E5;
-  height: 100% !important;
-  min-height: 100% !important;
-}
-
 /*
   ========================================
   HERO
@@ -474,6 +468,10 @@ img {
     font-size: calc(10px + 0.5208333333vw);
   }
 
+  .circles__block-1 {
+    top: 10px;
+  }
+
   .circles__block-6 .text p:last-child {
     font-size: calc(8px + 0.78125vw);
   }
@@ -777,6 +775,17 @@ img {
   }
 }
 
+@media screen and (max-width: 590px) {
+  .sections-titles {
+    font-size: calc(15px + 0.5208333333vw);
+  }
+
+  .sections-slogans {
+    margin-top: 50px;
+    font-size: calc(10px + 0.5208333333vw);
+  }
+}
+
 @media screen and (max-width: 550px) {
   .circles__block-1 {
     left: -50%;
@@ -871,14 +880,27 @@ img {
   }
 
   .line-bottom {
+    top: 240px;
     width: 75px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 
 @media screen and (max-width: 435px) {
+  .circles__block-1 {
+    left: -52%;
+    top: 20px;
+  }
+
+  .circles__block-2 {
+    top: 60px;
+  }
+
   .line-middle {
     left: -55%;
-    top: 140px;
+    top: 150px;
     width: 100px;
   }
 }
@@ -889,28 +911,28 @@ img {
   }
 
   .circles__block-1 {
-    top: 5px;
-    left: -60%;
+    top: 20px;
+    left: -50%;
   }
 
   .circles__block-3 {
-    left: -53%;
-    top: 90px;
+    left: -45%;
+    top: 105px;
   }
 
   .circles__block-4 {
-    left: -75%;
-    top: 128px;
+    left: -62%;
+    top: 140px;
   }
 
   .circles__block-5 {
-    left: -47%;
-    top: 160px;
+    left: -42%;
+    top: 173px;
   }
 
   .circles__block-6 {
-    left: -15%;
-    top: 220px;
+    left: -22%;
+    top: 237px;
   }
 
   .line-top {
@@ -920,8 +942,8 @@ img {
   }
 
   .line-middle {
-    left: -80%;
-    top: 140px;
+    left: -70%;
+    top: 160px;
     width: 100px;
     -webkit-transform: rotate(-50deg);
         -ms-transform: rotate(-50deg);
@@ -929,8 +951,8 @@ img {
   }
 
   .line-bottom {
-    top: 200px;
-    left: -70%;
+    top: 220px;
+    left: -60%;
     width: 90px;
   }
 }
