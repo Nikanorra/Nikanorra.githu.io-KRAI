@@ -20,21 +20,39 @@ img {
   width: 100%;
 }
 
-.title {
+.sections-titles {
   color: #000;
+  font-size: 25px;
   font-weight: normal;
   text-transform: uppercase;
   padding-top: 25px;
+  margin-bottom: 20px;
 }
 
-.paragraf {
+.sections-titles.pile {
+  color: #fff;
+}
+
+.sections-slogans {
   font-size: 23px;
   font-weight: 700;
   color: #000;
 }
 
-.paragraf span {
+.sections-slogans.pile {
+  color: #fff;
+}
+
+.sections-slogans span {
   color: #2DB6BB;
+}
+
+.sections-desc {
+  font-size: 25px;
+}
+
+.sections-desc p {
+  margin-bottom: 40px;
 }
 
 .flex {
@@ -50,7 +68,7 @@ img {
 }
 
 .grey-bg {
-  background: grey;
+  background: #EAE6E5;
   height: 100% !important;
   min-height: 100% !important;
 }
@@ -120,10 +138,6 @@ img {
 .problems .container.problems__wrap.col-md-12,
 .problems .container.problems__wrap.col-md-12 .col-md-4 {
   position: static !important;
-}
-
-.problems .title {
-  margin-bottom: 10vh;
 }
 
 .problems__bg {
@@ -293,80 +307,123 @@ img {
   ========================================
 */
 
+.proposition {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(43%, #fff), color-stop(43%, #EAE6E5), to(#EAE6E5));
+  background: -o-linear-gradient(left, #fff 0%, #fff 43%, #EAE6E5 43%, #EAE6E5 100%);
+  background: linear-gradient(90deg, #fff 0%, #fff 43%, #EAE6E5 43%, #EAE6E5 100%);
+}
+
 .proposition .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  font-size: 22px;
+}
+
+.proposition .proposition__list p {
+  margin-bottom: 25px;
+}
+
+.proposition .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
 }
 
-.proposition__list p {
-  margin-bottom: 25px;
-}
-
-.proposition__table {
+.proposition .proposition__table {
+  width: 80%;
   background: #fff;
   -webkit-box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
           box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
+  margin-top: 4%;
 }
 
-.proposition__table .title {
+.proposition .proposition__table .title {
   background: #000;
   color: #fff;
-  font-style: 15px;
+  font-size: 18px;
   font-weight: 700;
+  border-radius: 5px;
+  padding: 10px 44px;
 }
 
-.table__content {
+.proposition .proposition__table .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.table__content > div {
-  border-right: 1px dotted grey;
+.proposition .proposition__table .content > div {
+  border-right: 1px dotted #EAE6E5;
+  padding: 1% 2%;
 }
 
-.table__content > div:last-child {
+.proposition .proposition__table .content > div:last-child {
   border-right: none;
 }
 
-.table__content .task > p {
-  margin-bottom: 20px;
-  font-weight: 700;
+.proposition .proposition__table .content .task {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.table__content .task div {
+.proposition .proposition__table .content .task .task__title {
+  font-size: 11px;
+}
+
+.proposition .proposition__table .content .task > p {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.proposition .proposition__table .content .task div {
   position: relative;
   margin-bottom: 17px;
 }
 
-.table__content .task div img {
-  width: 42px;
+.proposition .proposition__table .content .task div img {
+  width: 37px;
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-.table__content .task div p {
-  background: grey;
+.proposition .proposition__table .content .task div img.middle {
+  left: 60%;
+}
+
+.proposition .proposition__table .content .task div p {
+  background: #D4D838;
   border-radius: 50%;
-  max-width: 63px;
-  max-height: 63px;
-  min-width: 63px;
-  min-height: 63px;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   font-size: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,16 +434,27 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
 }
 
-.table__content .parametrs > p {
+.proposition .proposition__table .content .parametrs {
+  width: 32%;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.proposition .proposition__table .content .parametrs > p {
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.table__content .parametrs li {
-  margin-bottom: 20px;
+.proposition .proposition__table .content .parametrs li {
+  line-height: 1.5rem;
+}
+
+.proposition .proposition__table .content .grahf {
+  width: 40%;
+  font-size: 11px;
 }
 
 .table__content.gradient {
@@ -433,7 +501,7 @@ img {
 }
 
 @media screen and (max-width: 777px) {
-  .paragraf {
+  .sections-slogans {
     font-size: calc(10px + 0.6770833333vw);
   }
 
@@ -526,7 +594,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .paragraf {
+  .sections-slogans {
     width: 50%;
     margin: 0;
   }
@@ -816,7 +884,7 @@ img {
 }
 
 @media screen and (max-width: 340px) {
-  .paragraf {
+  .sections-slogans {
     width: 70%;
   }
 
