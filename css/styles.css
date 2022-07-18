@@ -360,12 +360,12 @@ img {
 }
 
 .proposition .proposition__table .content > div {
-  border-right: 1px dotted #EAE6E5;
   padding: 1% 2%;
 }
 
-.proposition .proposition__table .content > div:last-child {
-  border-right: none;
+.proposition .proposition__table .content > div:nth-child(2) {
+  border-left: 1px dotted #EAE6E5;
+  border-right: 1px dotted #EAE6E5;
 }
 
 .proposition .proposition__table .content .task {
@@ -387,21 +387,38 @@ img {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(12, 83, 149)), to(rgb(45, 182, 188)));
   background: -o-linear-gradient(bottom, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
   background: linear-gradient(0deg, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
+  padding: 0;
+}
+
+.proposition .proposition__table .content .task.gradient div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.proposition .proposition__table .content .task.gradient div:nth-child(2) {
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;
 }
 
 .proposition .proposition__table .content .task.gradient div p {
   background: transparent;
-  border-radius: 0;
-  max-width: 100%;
-  max-height: 100%;
-  min-width: 100%;
-  min-height: 100%;
   font-size: 12px;
   font-weight: 600;
 }
 
 .proposition .proposition__table .content .task.gradient div img {
   position: sticky;
+  left: auto;
+  bottom: auto;
 }
 
 .proposition .proposition__table .content .task .task__title {
