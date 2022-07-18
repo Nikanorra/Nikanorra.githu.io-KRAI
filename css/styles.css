@@ -336,7 +336,7 @@ img {
 }
 
 .proposition .proposition__table {
-  width: 80%;
+  width: 90%;
   background: #fff;
   -webkit-box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
           box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
@@ -369,7 +369,7 @@ img {
 }
 
 .proposition .proposition__table .content .task {
-  width: 28%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,13 +380,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  margin: 0 20px 20px;
 }
 
 .proposition .proposition__table .content .task.gradient {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(12, 83, 149)), to(rgb(45, 182, 188)));
   background: -o-linear-gradient(bottom, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
   background: linear-gradient(0deg, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
+  margin: 55px 20px 20px;
   padding: 0;
 }
 
@@ -404,9 +405,14 @@ img {
   margin-bottom: 0;
 }
 
+.proposition .proposition__table .content .task.gradient div:first-child {
+  height: 40px;
+}
+
 .proposition .proposition__table .content .task.gradient div:nth-child(2) {
   border-top: 1px dotted #fff;
   border-bottom: 1px dotted #fff;
+  height: 37px;
 }
 
 .proposition .proposition__table .content .task.gradient div p {
@@ -426,14 +432,21 @@ img {
 }
 
 .proposition .proposition__table .content .task > p {
+  height: 25px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .proposition .proposition__table .content .task div {
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 
 .proposition .proposition__table .content .task div img {
@@ -471,7 +484,7 @@ img {
 }
 
 .proposition .proposition__table .content .parametrs {
-  width: 32%;
+  width: 34%;
   padding: 10px 0 10px 10px;
   font-size: 12px;
 }
@@ -479,19 +492,27 @@ img {
 .proposition .proposition__table .content .parametrs > p {
   margin-bottom: 20px;
   font-weight: 700;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .proposition .proposition__table .content .parametrs li {
-  line-height: 1.4rem;
+  line-height: 20px;
 }
 
 .proposition .proposition__table .content .grahf {
   width: 40%;
   font-size: 11px;
+  margin-top: 45px;
 }
 
 .proposition .proposition__table .content .grahf li {
-  line-height: 1.4rem;
+  line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,6 +525,10 @@ img {
   width: 70%;
 }
 
+.proposition .proposition__table .content .grahf li .units {
+  margin-left: 3%;
+}
+
 .proposition .proposition__table .content .grahf li .progressbar {
   height: 20px;
   width: 70%;
@@ -511,7 +536,7 @@ img {
 }
 
 .proposition .proposition__table .content .grahf li .progressbar__bg {
-  height: 13px;
+  height: 7px;
   width: 100%;
   background: #EAE6E5;
   position: absolute;
@@ -524,9 +549,9 @@ img {
 
 .proposition .proposition__table .content .grahf li .progressbar__border {
   position: absolute;
-  height: 17px;
+  height: 9px;
   width: 95%;
-  border-right: 3px solid #000;
+  border-right: 2px solid #000;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -545,9 +570,8 @@ img {
 .proposition .proposition__table .content .grahf li .progressbar__scale {
   background: #2DB6BB;
   width: 100%;
-  height: 15px;
+  height: 9px;
   position: absolute;
-  top: 5%;
 }
 
 .table__content.gradient {
