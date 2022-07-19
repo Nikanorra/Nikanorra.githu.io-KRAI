@@ -87,6 +87,7 @@ img {
   padding-left: 0;
 }
 
+.grey-bg,
 [class*=col-].grey-bg {
   background: #EAE6E5;
   padding-right: 0;
@@ -591,10 +592,60 @@ img {
   position: absolute;
 }
 
+.proposition__bg {
+  border-radius: 50%;
+  background: #2DB6BB;
+  opacity: 0.3;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  bottom: -200px;
+  left: -120px;
+}
+
 .table__content.gradient {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(12, 83, 149)), to(rgb(45, 182, 188)));
   background: -o-linear-gradient(bottom, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
   background: linear-gradient(0deg, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
+}
+
+/*
+  ========================================
+  VALUE
+  ========================================
+*/
+
+.value {
+  height: 100vh;
+}
+
+.value .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.value .arrow__line {
+  display: block;
+  height: 40px;
+  width: 90%;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgb(212, 216, 57)));
+  background: -o-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
+}
+
+.value .arrow__triagle {
+  height: 0;
+  width: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 41px solid #d4d839;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1200px) {
