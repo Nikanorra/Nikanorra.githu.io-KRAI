@@ -15,6 +15,10 @@ section {
   min-width: 320px;
 }
 
+.row {
+  width: 100%;
+}
+
 img {
   display: block;
   width: 100%;
@@ -67,6 +71,28 @@ img {
           justify-content: center;
 }
 
+.grey-left {
+  background: -webkit-gradient(linear, left top, right top, from(#EAE6E5), color-stop(35%, #EAE6E5), color-stop(35%, #fff), to(#fff));
+  background: -o-linear-gradient(left, #EAE6E5 0%, #EAE6E5 35%, #fff 35%, #fff 100%);
+  background: linear-gradient(90deg, #EAE6E5 0%, #EAE6E5 35%, #fff 35%, #fff 100%);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.grey-right {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(50%, #EAE6E5), to(#EAE6E5));
+  background: -o-linear-gradient(left, #fff 0%, #fff 50%, #EAE6E5 50%, #EAE6E5 100%);
+  background: linear-gradient(90deg, #fff 0%, #fff 50%, #EAE6E5 50%, #EAE6E5 100%);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+[class*=col-].grey-bg {
+  background: #EAE6E5;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 /*
   ========================================
   HERO
@@ -117,9 +143,6 @@ img {
 .problems {
   height: 100vh;
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#EAE6E5), color-stop(43%, #EAE6E5), color-stop(43%, #fff), to(#fff));
-  background: -o-linear-gradient(left, #EAE6E5 0%, #EAE6E5 43%, #fff 43%, #fff 100%);
-  background: linear-gradient(90deg, #EAE6E5 0%, #EAE6E5 43%, #fff 43%, #fff 100%);
 }
 
 .problems__wrap {
@@ -301,17 +324,11 @@ img {
   ========================================
 */
 
-.proposition {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(43%, #fff), color-stop(43%, #EAE6E5), to(#EAE6E5));
-  background: -o-linear-gradient(left, #fff 0%, #fff 43%, #EAE6E5 43%, #EAE6E5 100%);
-  background: linear-gradient(90deg, #fff 0%, #fff 43%, #EAE6E5 43%, #EAE6E5 100%);
-}
-
 .proposition .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .proposition .proposition__list p {
@@ -578,6 +595,12 @@ img {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(12, 83, 149)), to(rgb(45, 182, 188)));
   background: -o-linear-gradient(bottom, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
   background: linear-gradient(0deg, rgb(12, 83, 149) 0%, rgb(45, 182, 188) 100%);
+}
+
+@media screen and (max-width: 1200px) {
+  .proposition.grey-right {
+    background: transparent;
+  }
 }
 
 @media screen and (max-width: 1100px) {
