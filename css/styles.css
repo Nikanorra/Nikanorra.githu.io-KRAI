@@ -748,12 +748,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  padding: 2px 0;
+  padding: 2px 20px;
 }
 
 .scenario__params .background {
-  width: 40px;
-  height: 40px;
+  margin-right: 10px !important;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0;
   background: #2DB6BB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,7 +775,7 @@ img {
 }
 
 .scenario__params .background.gradient img {
-  width: 35px;
+  min-width: 35px;
   background: #fff;
   padding: 5px;
 }
@@ -787,16 +789,26 @@ img {
   border: 3px solid #0D83CC;
 }
 
+.scenario__params .background.sky-border {
+  background: #fff;
+  border: 3px solid #2DB6BB;
+}
+
 .scenario__params img {
   width: 30px;
 }
 
 .scenario__params .mark {
+  margin-right: 10px !important;
   color: #fff;
   background: #D4D838;
+  margin: 0;
+  font-size: 45px;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,6 +818,15 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.scenario__params .mark.empty {
+  background: transparent;
+  border: 3px solid #D4D838;
+}
+
+.scenario__params .desc {
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
