@@ -727,19 +727,21 @@ img {
 
 .scenario__title {
   border-bottom: 3px dotted #EAE6E5;
-  padding: 20px 20px 10px;
+  padding: 20px 20px 0;
 }
 
 .scenario__title p {
   font-size: 18px;
   font-weight: 600;
   color: #000;
+  height: 55px;
 }
 
 .scenario__title p:first-child {
   color: #2DB6BB;
   font-size: 22px;
   font-weight: 600;
+  height: auto;
 }
 
 .scenario__params {
@@ -759,6 +761,7 @@ img {
 
 .scenario__params:last-child {
   margin-bottom: 10px;
+  height: 55px;
 }
 
 .scenario__params .background {
@@ -883,6 +886,12 @@ img {
 
   .hero__text {
     font-size: calc(15px + 1.9791666667vw);
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .scenario__title p {
+    height: 75px;
   }
 }
 
@@ -1078,6 +1087,21 @@ img {
     left: -185px;
     width: 85px;
     border-bottom: 1px dotted #2DB6BB;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .scenario__title {
+    padding: 10px 10px 0;
+  }
+
+  .scenario__title p {
+    font-size: calc(8px + 0.5208333333vw);
+    height: 46px;
+  }
+
+  .scenario__title p:first-child {
+    font-size: calc(10px + 0.625vw);
   }
 }
 
@@ -1279,6 +1303,16 @@ img {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .scenario__title {
+    padding: 5px 5px 0;
+  }
+
+  .scenario__title p {
+    height: 65px;
   }
 }
 
