@@ -695,7 +695,7 @@ img {
 }
 
 .scenario__wrap {
-  height: 90%;
+  height: 95%;
   margin-top: 80px;
   margin-left: 50px;
 }
@@ -729,14 +729,14 @@ img {
 }
 
 .scenario__title p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   color: #000;
 }
 
 .scenario__title p:first-child {
   color: #2DB6BB;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -744,11 +744,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  padding: 2px 0;
 }
 
 .scenario__params .background {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: #2DB6BB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,8 +766,46 @@ img {
           justify-content: center;
 }
 
+.scenario__params .background.gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#2DB6BB), to(#0a589a));
+  background: -o-linear-gradient(left, #2DB6BB, #0a589a);
+  background: linear-gradient(to right, #2DB6BB, #0a589a);
+}
+
+.scenario__params .background.gradient img {
+  width: 35px;
+  background: #fff;
+  padding: 5px;
+}
+
+.scenario__params .background.blue {
+  background: #0a589a;
+}
+
+.scenario__params .background.blue-border {
+  background: #fff;
+  border: 3px solid #0D83CC;
+}
+
 .scenario__params img {
-  width: 45px;
+  width: 30px;
+}
+
+.scenario__params .mark {
+  color: #fff;
+  background: #D4D838;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
