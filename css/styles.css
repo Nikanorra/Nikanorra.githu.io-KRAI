@@ -325,6 +325,10 @@ img {
   ========================================
 */
 
+.proposition {
+  overflow: hidden;
+}
+
 .proposition .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,19 +623,53 @@ img {
   height: 100vh;
 }
 
+.value .container {
+  position: relative;
+  height: 80vh;
+}
+
 .value .arrow {
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  width: 90%;
+  height: 40px;
+  top: 80px;
+}
+
+.value .arrow.flip {
+  width: 40px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.value .arrow.flip .arrow__line {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(212, 216, 57)));
+  background: -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.value .arrow.flip .arrow__triagle {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .value .arrow__line {
   display: block;
-  height: 40px;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgb(212, 216, 57)));
   background: -o-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
   background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
@@ -641,9 +679,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .value .arrow__triagle {
@@ -655,6 +692,77 @@ img {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.scenario__wrap {
+  height: 90%;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.scenario__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50%;
+  width: 92%;
+}
+
+.scenario__tables {
+  border-radius: 3px;
+  -webkit-box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 4px 22px -2px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  width: 48%;
+  height: 90%;
+}
+
+.scenario__title {
+  border-bottom: 3px dotted #EAE6E5;
+  padding: 20px;
+}
+
+.scenario__title p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.scenario__title p:first-child {
+  color: #2DB6BB;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.scenario__params {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scenario__params .background {
+  width: 60px;
+  height: 60px;
+  background: #2DB6BB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scenario__params img {
+  width: 45px;
 }
 
 @media screen and (max-width: 1200px) {
