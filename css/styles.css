@@ -1091,6 +1091,10 @@ img {
 }
 
 @media screen and (max-width: 715px) {
+  .scenario__params {
+    font-size: calc(8px + 0.4166666667vw);
+  }
+
   .scenario__title {
     padding: 10px 10px 0;
   }
