@@ -30,7 +30,6 @@ img {
   font-weight: normal;
   text-transform: uppercase;
   padding-top: 25px;
-  margin-bottom: 25%;
 }
 
 .sections-titles.pile {
@@ -69,6 +68,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.shadow {
+  -webkit-box-shadow: 8px 6px 23px -9px rgba(0, 0, 0, 0.53);
+          box-shadow: 8px 6px 23px -9px rgba(0, 0, 0, 0.53);
 }
 
 .grey-left {
@@ -144,6 +148,10 @@ img {
   height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.problems .sections-titles {
+  margin-bottom: 25%;
 }
 
 .problems__wrap {
@@ -660,9 +668,9 @@ img {
 }
 
 .value .arrow.flip .arrow__line {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(212, 216, 57)));
-  background: -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(10%, #fff), to(#D4D838));
+  background: -o-linear-gradient(top, #fff 0%, #fff 10%, #D4D838 100%);
+  background: linear-gradient(180deg, #fff 0%, #fff 10%, #D4D838 100%);
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -678,9 +686,9 @@ img {
   display: block;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgb(212, 216, 57)));
-  background: -o-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
-  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(212, 216, 57) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(10%, #fff), to(#D4D838));
+  background: -o-linear-gradient(left, #fff 0%, #fff 10%, #D4D838 100%);
+  background: linear-gradient(90deg, #fff 0%, #fff 10%, #D4D838 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,6 +1028,10 @@ img {
 
   .value .arrow .arrow__line span:first-child {
     margin-left: 50px;
+  }
+
+  .value .arrow.flip .arrow__line span:first-child {
+    margin-left: 0;
   }
 
   .scenario__params {
