@@ -966,6 +966,81 @@ img {
   padding: 5px 0;
 }
 
+/*
+  ========================================
+  VALIDATION
+  ========================================
+*/
+
+.validation.grey-left {
+  background: -webkit-gradient(linear, left top, right top, from(#021526), color-stop(35%, #021526), color-stop(35%, #fff), to(#fff));
+  background: -o-linear-gradient(left, #021526 0%, #021526 35%, #fff 35%, #fff 100%);
+  background: linear-gradient(90deg, #021526 0%, #021526 35%, #fff 35%, #fff 100%);
+  color: #EAE6E5;
+  overflow: hidden;
+}
+
+.validation.grey-left .sections-titles {
+  color: #EAE6E5;
+}
+
+.validation.grey-left .grey-bg,
+.validation.grey-left [class*=col-].grey-bg {
+  background: #021526;
+}
+
+.validation.grey-left .col-xl-5.col-lg-12.grey-bg {
+  position: relative;
+  min-height: 100vh;
+}
+
+.validation.grey-left .col-xl-5.col-lg-12.grey-bg .proposition__bg {
+  position: absolute;
+}
+
+.validation.grey-left .validation__sections {
+  margin-bottom: 20px;
+}
+
+.validation.grey-left .validation__sections img {
+  height: 50px;
+}
+
+.validation.grey-left .validation__sections p {
+  color: #000;
+  font-size: calc(10px + 0.78125vw);
+  margin-bottom: 10px;
+}
+
+.validation.grey-left .validation__sections p span {
+  font-weight: 600;
+}
+
+.validation.grey-left .validation__sections a {
+  background: #D4D838;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: calc(8px + 0.5208333333vw);
+}
+
+.validation.grey-left .validation__partners {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.validation.grey-left .validation__partners img {
+  height: 50px;
+  width: auto;
+}
+
+.validation.grey-left .validation__partners p {
+  color: #0a589a;
+  padding: 0;
+  margin: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .proposition.grey-right {
     background: transparent;
