@@ -94,6 +94,7 @@ img {
 .grey-bg,
 [class*=col-].grey-bg {
   background: #EAE6E5;
+  min-height: 100vh;
 }
 
 /*
@@ -1047,6 +1048,70 @@ img {
   margin: 0;
 }
 
+/*
+  ========================================
+  STUDY
+  ========================================
+*/
+
+.table-wrap {
+  display: inline-block;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  color: #000;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr {
+  padding: 5px;
+}
+
+table th,
+table td {
+  padding: 10px;
+}
+
+table th {
+  font-size: calc(12px + 0.6770833333vw);
+  font-weight: 600;
+  text-align: left;
+}
+
+.study__graf {
+  height: 30px;
+  width: 30px;
+  background: #0a589a;
+  display: inline-block;
+}
+
+.study__graf.study__graf-45 {
+  width: 45px;
+}
+
+.study__graf.study__graf-90 {
+  width: 90px;
+}
+
+.study__graf.study__graf-sky {
+  background: #2DB6BB;
+  width: 230px;
+}
+
+.study__graf.study__graf-sky.study__graf-250 {
+  width: 250px;
+}
+
+.study__text {
+  width: 60px;
+}
+
 @media screen and (max-width: 1200px) {
   .proposition.grey-right {
     background: transparent;
@@ -1072,6 +1137,16 @@ img {
   .validation.grey-left .row {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .validation.grey-left .validation__partners {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 950px) {
+  .validation.grey-left .validation__partners img {
+    height: 50px;
   }
 }
 
@@ -1311,6 +1386,39 @@ img {
 
   .scenario__title p:first-child {
     font-size: calc(10px + 0.625vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-right: 1px solid transparent;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
 
