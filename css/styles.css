@@ -1054,15 +1054,11 @@ img {
   ========================================
 */
 
-.study .grey-bg,
-.study [class*=col-].grey-bg {
-  min-height: 100%;
-}
-
 .study .metrics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .study .study__graf {
@@ -1091,7 +1087,10 @@ img {
 }
 
 .study .study__text {
-  width: 30%;
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: inline-block;
 }
 
@@ -1391,9 +1390,13 @@ table th {
 }
 
 @media screen and (max-width: 768px) {
+  .grey-bg,
+  [class*=col-].grey-bg {
+    min-height: 100%;
+  }
+
   .study.grey-left {
     background: transparent;
-    min-height: auto;
   }
 
   .study.grey-left .container {
