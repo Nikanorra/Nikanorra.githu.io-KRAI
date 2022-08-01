@@ -1128,6 +1128,80 @@ table th {
   text-align: left;
 }
 
+/*
+  ========================================
+  TEAM
+  ========================================
+*/
+
+.team {
+  background: -o-linear-gradient(top, #fff 0%, #fff 250px, #EAE6E5 250px, #EAE6E5 100%);
+  background: linear-gradient(180deg, #fff 0%, #fff 250px, #EAE6E5 250px, #EAE6E5 100%);
+  height: 100%;
+}
+
+.team [class*=col-] {
+  height: 100%;
+}
+
+.team .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team .team__portrait {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team .team__portrait img {
+  height: 150px;
+  width: 150px;
+  background: #2DB6BB;
+  border-radius: 50%;
+}
+
+.team .team__desc {
+  height: 50%;
+  font-size: calc(12px + 0.6770833333vw);
+}
+
+.team .team__desc .team__contacts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.team .team__desc .team__contacts p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.team .team__desc .team__contacts img {
+  height: 20px;
+  width: 20px;
+}
+
+.team .team__desc .team__experience {
+  padding: 10px 0;
+}
+
+.team .team__desc .team__experience .company {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
   .proposition.grey-right {
     background: transparent;
