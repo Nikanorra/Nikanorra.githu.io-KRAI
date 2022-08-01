@@ -32,22 +32,18 @@ img {
   padding-top: 25px;
 }
 
-.sections-titles.pile {
-  color: #fff;
-}
-
 .sections-slogans {
   font-size: 23px;
   font-weight: 700;
   color: #000;
 }
 
-.sections-slogans.pile {
-  color: #fff;
-}
-
 .sections-slogans span {
   color: #2DB6BB;
+}
+
+.pile {
+  color: #fff;
 }
 
 .sections-desc {
@@ -1144,13 +1140,6 @@ table th {
   height: 100%;
 }
 
-.team .flex {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .team .team__portrait {
   height: 170px;
   display: -webkit-box;
@@ -1200,6 +1189,25 @@ table th {
 
 .team .team__desc .team__experience .company {
   font-weight: 600;
+}
+
+/*
+  ========================================
+  SUMMARY
+  ========================================
+*/
+
+.summary {
+  background-image: url("../../img/summury/summary-bg.svg");
+  background-size: cover;
+}
+
+.summary img {
+  width: 100px;
+  height: 100px;
+  background: #2DB6BB;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1200px) {
