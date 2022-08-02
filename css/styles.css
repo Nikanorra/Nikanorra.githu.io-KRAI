@@ -1202,12 +1202,38 @@ table th {
   background-size: cover;
 }
 
+.summary .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.summary .summary__content {
+  color: #fff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.summary .summary__content span {
+  color: #D4D838;
+}
+
 .summary img {
   width: 100px;
   height: 100px;
   background: #2DB6BB;
   border-radius: 50%;
-  padding: 20px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1200px) {
