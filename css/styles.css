@@ -38,6 +38,7 @@ img {
   font-size: 23px;
   font-weight: 700;
   color: #000;
+  padding-bottom: 50px;
 }
 
 .sections-slogans span {
@@ -570,6 +571,12 @@ header {
   overflow: hidden;
 }
 
+.proposition .flex {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .proposition .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,6 +623,10 @@ header {
   padding: 10px 44px;
 }
 
+.proposition .proposition__table .parametrs__indicators {
+  width: 55%;
+}
+
 .proposition .proposition__table .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,13 +637,12 @@ header {
   padding: 1% 2%;
 }
 
-.proposition .proposition__table .content > div:nth-child(2) {
-  border-left: 1px dotted #EAE6E5;
-  border-right: 1px dotted #EAE6E5;
+.proposition .proposition__table .content > div:first-child {
+  border-right: 1px dotted #000;
 }
 
 .proposition .proposition__table .content .task {
-  width: 25%;
+  width: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,7 +653,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px 20px;
 }
 
 .proposition .proposition__table .content .task.gradient {
@@ -747,9 +756,19 @@ header {
 }
 
 .proposition .proposition__table .content .parametrs {
-  width: 34%;
-  padding: 10px 0 10px 10px;
+  width: 78%;
+  padding: 10px 0 10px 5px;
   font-size: 12px;
+  position: relative;
+}
+
+.proposition .proposition__table .content .parametrs .line {
+  position: absolute;
+  top: 0;
+  right: 57%;
+  height: 100%;
+  width: 1px;
+  border-left: 1px dotted #000;
 }
 
 .proposition .proposition__table .content .parametrs > p {
@@ -764,41 +783,26 @@ header {
           align-items: end;
 }
 
+.proposition .proposition__table .content .parametrs .parametrs__title {
+  width: 45%;
+  display: inline-block;
+}
+
 .proposition .proposition__table .content .parametrs li {
   line-height: 20px;
 }
 
-.proposition .proposition__table .content .grahf {
-  width: 40%;
-  font-size: 11px;
-  margin-top: 45px;
-}
-
-.proposition .proposition__table .content .grahf li {
-  line-height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.proposition .proposition__table .content .grahf li img {
-  width: 70%;
-}
-
-.proposition .proposition__table .content .grahf li .units {
-  margin-left: 3%;
-}
-
-.proposition .proposition__table .content .grahf li .progressbar {
+.proposition .proposition__table .content .parametrs li .progressbar {
   height: 20px;
   width: 70%;
   position: relative;
 }
 
-.proposition .proposition__table .content .grahf li .progressbar__bg {
+.proposition .proposition__table .content .parametrs li .progressbar img {
+  display: inline;
+}
+
+.proposition .proposition__table .content .parametrs li .progressbar__bg {
   height: 7px;
   width: 100%;
   background: #EAE6E5;
@@ -810,7 +814,7 @@ header {
           transform: translateY(-50%);
 }
 
-.proposition .proposition__table .content .grahf li .progressbar__border {
+.proposition .proposition__table .content .parametrs li .progressbar__border {
   position: absolute;
   height: 9px;
   width: 95%;
@@ -822,19 +826,25 @@ header {
           transform: translateY(-50%);
 }
 
-.proposition .proposition__table .content .grahf li .progressbar__border.third {
+.proposition .proposition__table .content .parametrs li .progressbar__border.third {
   width: 75%;
 }
 
-.proposition .proposition__table .content .grahf li .progressbar__border.half {
+.proposition .proposition__table .content .parametrs li .progressbar__border.half {
   width: 50%;
 }
 
-.proposition .proposition__table .content .grahf li .progressbar__scale {
+.proposition .proposition__table .content .parametrs li .progressbar__scale {
   background: #2DB6BB;
   width: 100%;
   height: 9px;
   position: absolute;
+}
+
+.proposition .proposition__table .content .parametrs li .units {
+  width: 30%;
+  display: inline-block;
+  margin-left: 3%;
 }
 
 .proposition__bg {
@@ -1904,6 +1914,62 @@ table th {
   }
 }
 
+@media screen and (max-width: 585px) {
+  .proposition .proposition__table {
+    width: 95%;
+  }
+
+  .proposition .proposition__table .content .task {
+    width: 40%;
+  }
+
+  .proposition .proposition__table .content .parametrs {
+    width: 60%;
+  }
+
+  .proposition .proposition__table .content .parametrs .parametrs__title {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .proposition .proposition__table .content .parametrs .line {
+    display: none;
+  }
+
+  .proposition .proposition__table .content .parametrs li {
+    line-height: 10px;
+    margin-bottom: 20px;
+  }
+
+  .proposition .proposition__table .content .parametrs li .progressbar {
+    height: 10px;
+  }
+
+  .proposition .proposition__table .content .parametrs li .units {
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .proposition .proposition__table .parametrs__indicators {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    width: 100%;
+  }
+
+  .proposition .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 @media screen and (max-width: 495px) {
   .scenario__title {
     padding: 5px 5px 0;
@@ -1928,6 +1994,13 @@ table th {
 
   .scenario__params .desc {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .proposition .proposition__table .content .parametrs li .units {
+    font-weight: 600;
+    font-size: 8px;
   }
 }
 
