@@ -18,22 +18,42 @@
   <div class="menu">
     <div class="container">
       <nav class="flex">
-        <div class="flex">
+        <a href="#" class="flex">
           <img src="./img/krai.svg" alt="KRAI">
           <img class="logo" data-wow-duration="1s" data-wow-delay="3s" src="/img/logo.svg" alt="logo">
-        </div>
-        <ul class="flex">
-          <li>Home</li>
-          <li>Problems</li>
-          <li>Propositions</li>
-          <li>Value</li>
-          <li>We do & we get</li>
-          <li>Validation</li>
-          <li>Case study</li>
-          <li>Our team</li>
-          <li>Summary</li>
+        </a>
+        <ul class="flex menu__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#problems">Problems</a></li>
+          <li><a href="#propositions">Propositions</a></li>
+          <li><a href="#value">Value</a></li>
+          <li><a href="#we">We do & we get</a></li>
+          <li><a href="#validation">Validation</a></li>
+          <li><a href="#caseStudy">Case study</a></li>
+          <li><a href="#team">Our team</a></li>
+          <li><a href="#summary">Summary</a></li>
         </ul>
       </nav>
+
+      <div class="mobile">
+        <div class="button" id="button active">
+          <span></span>
+        </div>
+        <div class="mobile__list" id="mobile">
+          <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#problems">Problems</a></li>
+            <li><a href="#propositions">Propositions</a></li>
+            <li><a href="#value">Value</a></li>
+            <li><a href="#we">We do & we get</a></li>
+            <li><a href="#validation">Validation</a></li>
+            <li><a href="#caseStudy">Case study</a></li>
+            <li><a href="#team">Our team</a></li>
+            <li><a href="#summary">Summary</a></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </header>
@@ -44,51 +64,51 @@
           <img src="./img/krai.svg" alt="KRAI">
           <img class="logo wow flip" data-wow-duration="1s" data-wow-delay="3s" src="/img/logo.svg" alt="logo">
         </div>
-        <div class="hero__text wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Edge AI. <b>Solved.</b></div>
+        <div class="hero__text wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">Edge AI. <b>Solved.</b></div>
       </div>
     </div>
   </section>
-  <section class="problems grey-left">
+  <section class="problems grey-left" id="problems">
   <div class="container problems__wrap col-12">
     <div class="row">
       <div class="col-5 grey-bg">
-        <h1 class="sections-titles wow pulse" id="problems">PROBLEM</h1>
+        <h1 class="sections-titles wow slideInLeft" id="problems">PROBLEM</h1>
         <p class="sections-slogans wow bounceInLeft" data-wow-delay="2s">Is your team facing any of these <span>challenges?</span></p>
         <img class="problems__bg" src="./img/problemsBg.png" alt="">
       </div>
   
       <div class="col-7">
         <div class="circles">
-          <div class="circles__block-1 wow bounce" data-wow-duration="2s" data-wow-delay="1s">
+          <div class="circles__block-1 wow slideInRight" data-wow-duration="1s">
             <div class="circle__1">51%</div>
             <p>How do we design the right algorithm for the task?</p>
           </div>
-          <div class="line-top">
+          <div class="line-top wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
           </div>
   
-          <div class="circles__block-2 wow bounce" data-wow-duration="2s" data-wow-delay="1.2s">
+          <div class="circles__block-2 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.1s">
             <div class="circle__2">53%</div>
             <p>How do we implement and optimize our algorithm?</p>
           </div>
-          <div class="line-middle"></div>
-          <div class="line-bottom"></div>
+          <div class="line-middle wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"></div>
+          <div class="line-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"></div>
   
-          <div class="circles__block-3 wow bounce" data-wow-duration="2s" data-wow-delay="1.4s">
+          <div class="circles__block-3 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="circle__3">30%</div>
             <p>How do we select the right hardware for the task?</p>
           </div>
   
-          <div class="circles__block-4 wow bounce" data-wow-duration="2s" data-wow-delay="1.6s">
+          <div class="circles__block-4 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="circle__4">28%</div>
             <p>How do we test and validate our compute solution?</p>
           </div>        
   
-          <div class="circles__block-5 wow bounce" data-wow-duration="2s" data-wow-delay="1.8s">
+          <div class="circles__block-5 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="circle__5">20%</div>
           <p>How do we integrate our solution into the product?</p>
           </div>
   
-          <div class="circles__block-6 wow bounce" data-wow-duration="2s" data-wow-delay="1.9s">
+          <div class="circles__block-6 wow slideInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
             <div class="circle__6">!</div>
             <div class="text">
               <p>You are not alone! These typically <br><span>hinder</span> Edge AI product development.</p>
@@ -101,11 +121,11 @@
 
   </div>
 </section>
-  <section class="proposition grey-right">
+  <section class="proposition grey-right" id="proposition">
   <div class="container">
     <div class="row">
       <div class="col-xl-5 col-lg-12">
-        <h1 class="sections-titles wow pulse">VALUE PROPOSITION</h1>
+        <h1 class="sections-titles wow slideInLeft">VALUE PROPOSITION</h1>
         <div class="sections-desc">
           <p class="wow bounceInLeft" data-wow-delay="1s">
             We at KRAI help you tackle
@@ -301,9 +321,9 @@
     </div>
   </div>
 </section>
-  <section class="value grey-bg">
+  <section class="value grey-bg" id="value">
   <div class="container">
-    <h1 class="sections-titles wow pulse">OUR VALUE-ADD</h1>
+    <h1 class="sections-titles wow slideInLeft">OUR VALUE-ADD</h1>
       <div class="arrow">
         <span class="arrow__line">
           <span>Hardware fixed</span>
@@ -445,221 +465,13 @@
 
   </div>
 </section>
-  <section class="what grey-left">
-  <div class="container">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h2 class="sections-titles">WHAT WE DO</h2>
-          <div class="what__text">
-            <span>
-              We optimize your neuralware by automated
-            application of vendor-specific (e.g. NVIDIA TensorRT)
-            and vendor-neutral (e.g. TVM, AIMET) tools, while
-            automatically tuning numerous parameters to achieve
-            the right performance/accuracy trade-offs.
-            </span>
-            <div class="what__icons">
-              <div class="wrap">
-                <div class="circle">+</div>
-                <img src="./img/ico-arrow.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <h2 class="sections-titles right">WHAT YOU GET</h2>
-          <div class="what__text right">
-            <img src="./img/ico-scheme.svg" alt="">
-            <span>
-              You get your optimized neuralware along
-              with automated reproducible workflows for
-              comprehensive performance/accuracy evalution
-              on the target hardware
-            </span>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="line"></div>
-        </div>
-
-        <div class="col-6">
-          <div class="what__text">
-            <span>
-              We design your neuralware tailored to your tasks and
-              requirements in terms of the performance/accuracy
-              trade-offs. We customize automated workflows for
-              training your neuralware on-premise or in the cloud,
-              while optimizing resource usage (e.g. billable time)
-              and target accuracy (e.g. quantization-aware training).
-            </span>
-            <div class="what__icons">
-              <div class="wrap">
-                <div class="circle">+</div>
-                <img src="./img/ico-arrow.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="what__text right">
-            <img src="./img/ico-scheme.svg" alt="">
-            <span>
-              If you can share your datasets, we train your
-              neuralware using our compute resources;
-              otherwise, you get automated workflows
-              for training your neuralware using your own
-              resources. You can iterate on your neuralware e.g.
-              incrementally retrain (fine-tune) it with new data.
-            </span>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="line"></div>
-        </div>
-
-        <div class="col-6">
-          <div class="what__text">
-            <span>
-              We recommend you an optimal hardware
-              specification (processors, accelerators, interconnect,
-              etc.), which, together with optimized neuralware and
-              middleware, will meet your requirements.
-            </span>
-            <div class="what__icons">
-              <div class="wrap">
-                <div class="circle">+</div>
-                <img src="./img/ico-arrow.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="what__text right">
-            <img class="blue" src="./img/ico-scheme.svg" alt="">
-            <span>
-              You get a fit-for-purpose hardware specification,
-              validated via a combination of direct execution and
-              performance modeling. We help you partner with
-              reliable third-parties to manufacture your hardware
-              in sample quantities and then in volume.
-            </span>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="line"></div>
-        </div>
-
-        <div class="col-6">
-          <div class="what__text">
-            <span>
-              We customize our unique middleware to brilliantly
-              orchestrate the execution of your neuralware on
-              your hardware, while optimizing resource usage and
-              meeting throughtput/latency constraints.
-            </span>
-            <div class="what__icons">
-              <div class="wrap">
-                <div class="circle">+</div>
-                <img src="./img/ico-arrow.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="what__text right">
-            <img class="gradient" src="./img/ico-gears.svg" alt="">
-            <span>
-              You get a flexible full-stack solution from the
-              world-leading experts in benchmarking and
-              optimization of computer systems for resourceconstrained applications.
-            </span>
-          </div>
-        </div>
-        <div class="col-12">
-        </div>
-
-      </div>
-      </div>
-    </div>
-
-
-  </div>
-</section> 
-  <section class="validation grey-left">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-5 col-lg-12 grey-bg">
-        <h1 class="sections-titles">VALIDATION</h1>
-        <div class="sections-desc">
-          <p>
-            We are world-class experts in
-            benchmarking and optimization
-            of Computer Systems for Edge AI
-            applications.
-          </p>
-          <p>
-            We have validated our approach in
-            influential projects with leading AI
-            Hardware companies.
-          </p>
-        </div>
-        <div class="proposition__bg"></div>
-      </div>
-      
-      <div class="col-xl-7 col-lg-12">
-        <div class="row validation__sections">
-          <div class="col-6">
-            <img src="./img/validation/partner-qualcomm.svg" alt="">
-            <p>
-              Achieved up to <span>7x energy efficiency</span>
-              over NVIDIA, making Qualcomm chips 
-              more attractive for Edge applications
-            </p>
-            <a href="https://www.linleygroup.com/newsletters/newsletter_detail.php?num=6446" target="_blank">link</a>
-          </div>
-          <div class="col-6">
-            <img src="./img/validation/partner-arm.svg" alt="">
-            <p>
-              Achieved up to <span>4x performance 
-              improvement</span> on Edge GPUs for 
-              Android Neural Networks API
-            </p>
-          </div>   
-        </div>
-        <div class="row validation__sections">
-          <div class="col-6">
-            <img src="./img/validation/partner-mlCommons.svg" alt="">
-            <p>
-              Showcased our technology by pre-paring > <span>50% of all Inference results</span>
-              (more than 35+ submitters combined)
-            </p>
-            <a href="https://mlcommons.org/en/inference-edge-20/" target="_blank">link</a>
-          </div>
-          <div class="col-6">
-            <img src="./img/validation/partner-generalMotors.svg" alt="">
-            <p>
-              Informed the <span>business-critical 
-              selection</span> of compute platforms 
-              for autonomous driving
-            </p>
-            <a href="https://www.youtube.com/watch?v=1ldgVZ64hEI&feature=youtu.be" target="_blank">link</a>
-          </div>
-        </div>
-        <div class="row validation__partners">
-          <img src="./img/validation/partner-icons-strawberries.svg" alt="">
-          <img src="./img/validation/partner-icons-fujitsu.svg" alt="">
-          <img src="./img/validation/partner-icons-dell.svg" alt="">
-          <p>Stealth and public<br>AI hardware startups</p>
-        </div>
-    </div>
-  </div>
-</section>
-  <section class="study grey-left">
+  
+  
+  <section class="study grey-left" id="caseStudy">
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-12 grey-bg">
-        <h1 class="sections-titles">CASE STUDY</h1>
+        <h1 class="sections-titles wow slideInLeft">CASE STUDY</h1>
         <div class="sections-desc">
           <p>
             MLPerf is the world’s most credible 
@@ -761,9 +573,9 @@
 
   </div>
 </section>
-  <section class="team">
+  <section class="team" id="team">
   <div class="container">
-    <h2 class="sections-titles">LEADERSHIP TEAM</h2>
+    <h2 class="sections-titles wow slideInLeft">LEADERSHIP TEAM</h2>
     <div class="row">
       <div class="col-md-4 col-12">
         <div class="team__portrait">
@@ -865,9 +677,9 @@
 
   </div>
 </section>
-  <section class="summary">
+  <section class="summary" id="summary">
   <div class="container">
-    <h2 class="sections-titles pile">SUMMARY</h2>
+    <h2 class="sections-titles pile wow slideInLeft">SUMMARY</h2>
     <div class="row">
       <div class="col-md-4 col-12">
         <div class="summary__content pile">

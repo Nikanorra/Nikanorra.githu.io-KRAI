@@ -1,4 +1,3 @@
-
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
@@ -537,3 +536,21 @@
 });
 ;
 new WOW().init();
+
+var button = document.getElementById("button");
+var menu = document.getElementById("mobile");
+
+// debugger;
+
+button.addEventListener("click", function() {
+  menu.classList.toggle('active');
+})
+
+
+/*new: closing when clicking outside the modal */
+document.addEventListener("click", function(e) {
+  var click = e.composedPath().includes(button);
+  if (!click) {
+    document.body.classList.remove('active');
+  }
+})

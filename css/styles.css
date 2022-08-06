@@ -31,7 +31,7 @@ img {
   font-size: 40px;
   font-weight: normal;
   text-transform: uppercase;
-  padding-top: 25px;
+  padding-top: 45px;
 }
 
 .sections-slogans {
@@ -97,11 +97,11 @@ img {
 
 /*
   ========================================
-  HERO
+  HEADER
   ========================================
 */
 
-.menu {
+header {
   background: #000;
   position: fixed;
   width: 100%;
@@ -115,6 +115,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 30px;
 }
 
 .menu nav.flex img {
@@ -130,13 +131,13 @@ img {
           animation-timing-function: cubic-bezier(0.99, -0.33, 0, 1.32);
 }
 
-.menu nav.flex ul {
-  color: #fff;
+.menu nav.flex .menu__list {
   font-size: calc(11px + 0.2604166667vw);
 }
 
-.menu nav.flex ul li {
-  line-height: calc(30px + 0.5208333333vw);
+.menu nav.flex .menu__list li {
+  color: #fff;
+  line-height: 30px;
   padding: 0 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,10 +150,151 @@ img {
   transition: 2s ease-out;
 }
 
-.menu nav.flex ul li:hover {
+.menu nav.flex .menu__list li:hover {
   background: #fff;
-  color: #000;
   cursor: pointer;
+}
+
+.menu nav.flex .menu__list li:hover a {
+  color: #000;
+}
+
+.menu nav.flex .menu__list li a {
+  color: #fff;
+}
+
+.mobile {
+  width: 100%;
+}
+
+.mobile span {
+  margin: 0 auto;
+  position: relative;
+  top: 7px;
+}
+
+.mobile span:before,
+.mobile span:after {
+  position: absolute;
+  content: "";
+}
+
+.mobile span,
+.mobile span:before,
+.mobile span:after {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+
+.mobile span:before {
+  margin-top: -5px;
+}
+
+.mobile span:after {
+  margin-top: 5px;
+}
+
+.mobile .button {
+  display: none;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+.mobile .button span {
+  -webkit-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.mobile .button:hover span {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.mobile .button span:before {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  -o-transition-property: margin, transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+       -o-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.mobile .button:hover span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+       -o-transition-delay: 0s, 0.2s;
+          transition-delay: 0s, 0.2s;
+}
+
+.mobile .button span:after {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  -o-transition-property: margin, transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+       -o-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.mobile .button:hover span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+       -o-transition-delay: 0s, 0.2s;
+          transition-delay: 0s, 0.2s;
+}
+
+.mobile .mobile__list {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  background: red;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.mobile .mobile__list.active {
+  display: block;
+}
+
+.mobile .mobile__list.active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @-webkit-keyframes rotation {
@@ -207,12 +349,12 @@ img {
 }
 
 .hero__wrap img {
-  height: 16vh;
+  height: calc(50px + 7.2916666667vw);
   position: relative;
 }
 
 .hero__wrap .logo {
-  height: 30vh;
+  height: calc(140px + 10.4166666667vw);
   margin-left: 50px;
 }
 
@@ -1369,6 +1511,14 @@ table th {
 }
 
 @media screen and (max-width: 1000px) {
+  .mobile .button {
+    display: block;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
   table {
     border: 0;
   }
