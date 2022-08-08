@@ -603,6 +603,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 .proposition .proposition__table {
@@ -1817,9 +1818,10 @@ table th {
 }
 
 @media screen and (max-width: 768px) {
-  .grey-bg,
+  .study .grey-bg,
   [class*=col-].grey-bg {
     min-height: 100%;
+    background: transparent;
   }
 
   .study.grey-left {
@@ -1834,6 +1836,21 @@ table th {
   .study.grey-left .row {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .team {
+    background: #EAE6E5;
+  }
+
+  .team .team__portrait {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-top: 50px;
+  }
+
+  .team .team__desc .team__contacts {
+    margin-top: 20px;
   }
 }
 
