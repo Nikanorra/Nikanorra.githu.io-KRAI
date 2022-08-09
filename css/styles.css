@@ -1226,6 +1226,10 @@ header {
   overflow: hidden;
 }
 
+.validation.grey-left img.mobile {
+  display: none;
+}
+
 .validation.grey-left .sections-titles {
   color: #EAE6E5;
 }
@@ -1384,8 +1388,8 @@ table th {
 */
 
 .team {
-  background: -o-linear-gradient(top, #fff 0%, #fff 250px, #EAE6E5 250px, #EAE6E5 100%);
-  background: linear-gradient(180deg, #fff 0%, #fff 250px, #EAE6E5 250px, #EAE6E5 100%);
+  background: -o-linear-gradient(top, #fff 0%, #fff 265px, #EAE6E5 265px, #EAE6E5 100%);
+  background: linear-gradient(180deg, #fff 0%, #fff 265px, #EAE6E5 265px, #EAE6E5 100%);
   height: 100%;
 }
 
@@ -1556,7 +1560,29 @@ table th {
   }
 
   .validation.grey-left {
-    background: transparent;
+    background: #021526;
+    color: #EAE6E5;
+  }
+
+  .validation.grey-left img.validation__img {
+    display: none;
+  }
+
+  .validation.grey-left img.mobile {
+    display: block;
+  }
+
+  .validation.grey-left .col-xl-5.col-lg-12.grey-bg {
+    overflow: visible;
+  }
+
+  .validation.grey-left .proposition__bg {
+    bottom: auto;
+    left: auto;
+  }
+
+  .validation.grey-left .validation__sections p {
+    color: #EAE6E5;
   }
 
   .validation.grey-left .container {
@@ -1573,6 +1599,10 @@ table th {
 
   .validation.grey-left .validation__partners {
     width: 100%;
+  }
+
+  .validation.grey-left .col-xl-5.col-lg-12.grey-bg {
+    min-height: auto;
   }
 }
 
