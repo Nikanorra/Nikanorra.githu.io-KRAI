@@ -1123,6 +1123,11 @@ header {
   background: linear-gradient(90deg, #EAE6E5 0%, #EAE6E5 50%, #fff 50%, #fff 100%) !important;
 }
 
+.what .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .what .right {
   padding-left: 50px;
   padding-right: 0;
@@ -1685,7 +1690,7 @@ table th {
 
 @media screen and (max-width: 865px) {
   .what .right {
-    padding-left: 20px;
+    padding-left: 0;
     padding-right: 0;
   }
 
