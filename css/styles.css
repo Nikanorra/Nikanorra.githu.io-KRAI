@@ -1294,6 +1294,10 @@ header {
   ========================================
 */
 
+.table-wrap {
+  margin-top: 50px;
+}
+
 .study .metrics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1442,7 +1446,7 @@ table th {
 */
 
 .summary {
-  background-image: url("../../img/summury/summary-bg.svg");
+  background-image: url("../img/summury/summary-bg.svg");
   background-size: cover;
 }
 
@@ -1625,6 +1629,18 @@ table th {
     float: left;
     text-transform: uppercase;
     font-weight: bold;
+    padding-bottom: 3px;
+  }
+
+  .metrics {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .metrics .study__text {
+    width: auto;
+    margin-right: 10px;
   }
 }
 
@@ -1824,15 +1840,8 @@ table th {
     background: transparent;
   }
 
-  .study .metrics {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .study .metrics .study__text {
-    width: auto;
-    margin-right: 10px;
+  .study .table-wrap {
+    margin-top: 0;
   }
 
   .study.grey-left {
@@ -1847,6 +1856,10 @@ table th {
   .study.grey-left .row {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .study .sections-slogans {
+    padding-bottom: 0;
   }
 
   .team {
@@ -2089,6 +2102,16 @@ table th {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .proposition .proposition__table .content .task > p {
+    height: 45px;
+  }
+
+  .proposition .proposition__table .content .parametrs > p {
+    height: 35px;
   }
 }
 
