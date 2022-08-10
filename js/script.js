@@ -544,6 +544,7 @@ var menu = document.getElementById("mobile");
 
 button.addEventListener("click", function() {
   menu.classList.toggle('active');
+  button.classList.toggle('active');
 })
 
 
@@ -551,6 +552,7 @@ button.addEventListener("click", function() {
 document.addEventListener("click", function(e) {
   var click = e.composedPath().includes(button);
   if (!click) {
-    document.body.classList.remove('active');
+    button.classList.remove('active');
+    menu.classList.remove('active');
   }
 })

@@ -213,13 +213,6 @@ header {
           transition-delay: 0.2s;
 }
 
-.mobile .button:hover span {
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-transition-delay: 0.2s;
-       -o-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
 .mobile .button span:before {
   -webkit-transition-property: margin, -webkit-transform;
   transition-property: margin, -webkit-transform;
@@ -232,16 +225,6 @@ header {
   -webkit-transition-delay: 0.2s, 0s;
        -o-transition-delay: 0.2s, 0s;
           transition-delay: 0.2s, 0s;
-}
-
-.mobile .button:hover span:before {
-  margin-top: 0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition-delay: 0s, 0.2s;
-       -o-transition-delay: 0s, 0.2s;
-          transition-delay: 0s, 0.2s;
 }
 
 .mobile .button span:after {
@@ -258,7 +241,24 @@ header {
           transition-delay: 0.2s, 0s;
 }
 
-.mobile .button:hover span:after {
+.mobile .button.active span {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.mobile .button.active span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+       -o-transition-delay: 0s, 0.2s;
+          transition-delay: 0s, 0.2s;
+}
+
+.mobile .button.active span:after {
   margin-top: 0;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -275,7 +275,7 @@ header {
   top: 30px;
   left: 0;
   right: 0;
-  background: red;
+  background: #000;
   height: 100vh;
   margin: 0 auto;
 }
@@ -296,6 +296,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mobile .mobile__list.active ul li {
+  line-height: 40px;
+}
+
+.mobile .mobile__list.active ul li a {
+  color: #fff;
 }
 
 @-webkit-keyframes rotation {
