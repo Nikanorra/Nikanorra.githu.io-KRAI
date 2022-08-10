@@ -96,6 +96,14 @@ img {
   min-height: 100vh;
 }
 
+.link {
+  background: #D4D838;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: calc(8px + 0.5208333333vw);
+}
+
 /*
   ========================================
   HEADER
@@ -474,7 +482,7 @@ header {
 }
 
 .circles__block-6 .text p:last-child {
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .circle__1,
@@ -845,6 +853,22 @@ header {
 
 .proposition .proposition__table .content .parametrs li .progressbar__border.half {
   width: 50%;
+}
+
+.proposition .proposition__table .content .parametrs li .progressbar__border.blue.half {
+  width: 50%;
+  left: 0;
+  border-left: 0 solid transparent;
+}
+
+.proposition .proposition__table .content .parametrs li .progressbar__border.blue {
+  left: 45%;
+  width: 40%;
+  border-left: 2px solid #000;
+}
+
+.proposition .proposition__table .content .parametrs li .progressbar__border.blue .progressbar__scale {
+  background: #0a589a;
 }
 
 .proposition .proposition__table .content .parametrs li .progressbar__scale {
@@ -1276,14 +1300,6 @@ header {
   font-weight: 600;
 }
 
-.validation.grey-left .validation__sections a {
-  background: #D4D838;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: calc(8px + 0.5208333333vw);
-}
-
 .validation.grey-left .validation__partners {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1292,6 +1308,7 @@ header {
           align-items: center;
   width: 60%;
   margin: 0 auto;
+  padding: 60px 0;
 }
 
 .validation.grey-left .validation__partners img {
@@ -1314,6 +1331,7 @@ header {
 
 .table-wrap {
   margin-top: 50px;
+  margin-bottom: 10%;
 }
 
 .study .metrics {
@@ -1388,6 +1406,15 @@ table th {
   font-size: calc(12px + 0.6770833333vw);
   font-weight: 600;
   text-align: left;
+}
+
+.study__remark {
+  font-size: calc(8px + 0.5208333333vw);
+  margin-bottom: 50px;
+}
+
+.study__remark p {
+  margin-bottom: 30px;
 }
 
 /*
@@ -1493,6 +1520,7 @@ table th {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .summary .summary__content span {
@@ -1506,6 +1534,7 @@ table th {
   background: #2DB6BB;
   border-radius: 50%;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1470px) {
@@ -1732,7 +1761,7 @@ table th {
   .circles__block-4 .text p:last-child,
   .circles__block-5 .text p:last-child,
   .circles__block-6 .text p:last-child {
-    font-size: calc(9px + 0.8333333333vw);
+    font-size: calc(7px + 0.5729166667vw);
   }
 }
 
