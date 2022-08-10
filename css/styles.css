@@ -1625,6 +1625,15 @@ table th {
     width: 70%;
     margin: 0;
   }
+
+  .circles__block-1,
+  .circles__block-2,
+  .circles__block-3,
+  .circles__block-4,
+  .circles__block-5,
+  .circles__block-6 {
+    font-size: calc(16px + 0.46875vw);
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1764,7 +1773,7 @@ table th {
 
 @media screen and (max-width: 850px) {
   .sections-titles {
-    font-size: calc(12px + 0.6770833333vw);
+    font-size: calc(18px + 0.2604166667vw);
   }
 
   .problems__bg {
@@ -2172,6 +2181,34 @@ table th {
   }
 }
 
+@media screen and (max-width: 467px) {
+  .circles__block-1 {
+    left: -40px;
+    top: 7px;
+  }
+
+  .circles__block-2 {
+    left: -10px;
+    top: 63px;
+  }
+
+  .circles__block-3 {
+    left: -30px;
+  }
+
+  .circles__block-4 {
+    left: -50px;
+  }
+
+  .line-top {
+    top: 80px;
+    left: -50px;
+    -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+            transform: rotate(50deg);
+  }
+}
+
 @media screen and (max-width: 440px) {
   .proposition.grey-right .proposition__table .content .task.gradient div p {
     font-size: 7px;
@@ -2192,6 +2229,54 @@ table th {
 }
 
 @media screen and (max-width: 400px) {
+  .circles__block-1 {
+    left: -10px;
+    top: 7px;
+  }
+
+  .circles__block-2 {
+    left: 0;
+  }
+
+  .circles__block-3 {
+    left: -20px;
+  }
+
+  .circles__block-4 {
+    left: -40px;
+  }
+
+  .circles__block-5 {
+    left: -10px;
+  }
+
+  .circles__block-6 {
+    left: 25px;
+  }
+
+  .line-top {
+    top: 80px;
+    left: -20px;
+    -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+            transform: rotate(50deg);
+  }
+
+  .line-middle {
+    left: -40px;
+  }
+
+  .line-bottom {
+    left: -35px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .problems__bg {
+    max-height: 35vh;
+  }
+
   .proposition .proposition__table .content .parametrs li .units {
     font-weight: 600;
     font-size: 8px;
@@ -2200,6 +2285,6 @@ table th {
 
 @media screen and (max-width: 370px) {
   .what .sections-titles {
-    font-size: calc(10px + 0.5208333333vw);
+    font-size: calc(12px + 0.6770833333vw);
   }
 }
