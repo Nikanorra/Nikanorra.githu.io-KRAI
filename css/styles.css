@@ -904,7 +904,7 @@ header {
   position: absolute;
   width: 90%;
   height: 40px;
-  top: 80px;
+  top: 103px;
 }
 
 .value .arrow.flip {
@@ -1870,6 +1870,10 @@ table th {
         -ms-transform: rotate(47deg);
             transform: rotate(47deg);
   }
+
+  .value .arrow {
+    top: 85px;
+  }
 }
 
 @media screen and (max-width: 785px) {
@@ -2273,10 +2277,6 @@ table th {
             transform: rotate(45deg);
   }
 
-  .problems__bg {
-    max-height: 35vh;
-  }
-
   .proposition .proposition__table .content .parametrs li .units {
     font-weight: 600;
     font-size: 8px;
@@ -2286,5 +2286,11 @@ table th {
 @media screen and (max-width: 370px) {
   .what .sections-titles {
     font-size: calc(12px + 0.6770833333vw);
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .problems__bg {
+    max-height: 30vh;
   }
 }
