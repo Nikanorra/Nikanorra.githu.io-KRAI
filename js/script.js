@@ -540,7 +540,6 @@ new WOW().init();
 var button = document.getElementById("button");
 var menu = document.getElementById("mobile");
 
-// debugger;
 
 button.addEventListener("click", function() {
   menu.classList.toggle('active');
@@ -548,7 +547,7 @@ button.addEventListener("click", function() {
 })
 
 
-/*new: closing when clicking outside the modal */
+/* closing when clicking outside the modal */
 document.addEventListener("click", function(e) {
   var click = e.composedPath().includes(button);
   if (!click) {
@@ -556,3 +555,35 @@ document.addEventListener("click", function(e) {
     menu.classList.remove('active');
   }
 })
+;
+var offset = 0;
+var width = 400;
+var carousel = document.querySelector(".carousel__wrap");
+// debugger;
+var total = (carousel.children.length - 10) * 140;
+const screen = window.screen.availWidth;
+// var total = 700;
+
+var item = document.querySelector(".carousel__item");
+var btnPrev = document.querySelector(".prev");
+var btnNext = document.querySelector(".next");
+
+btnNext.addEventListener("click", function() {
+  offset = offset + width;
+  debugger;
+  if (offset > total) {
+    offset = total - screen;
+  } else {
+    carousel.style.left = -offset + "px";
+  }
+})
+
+btnPrev.addEventListener("click", function() {
+  offset = offset - width;
+  debugger;
+  if (offset < 0) {
+    offset = total;
+  } else {
+    carousel.style.left = -offset + "px";
+  }
+});
