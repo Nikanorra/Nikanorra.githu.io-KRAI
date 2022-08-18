@@ -556,34 +556,110 @@ document.addEventListener("click", function(e) {
   }
 })
 ;
-var offset = 0;
-var width = 400;
-var carousel = document.querySelector(".carousel__wrap");
-// debugger;
-var total = (carousel.children.length - 10) * 140;
-const screen = window.screen.availWidth;
-// var total = 700;
+// let offset = 0;
+// let width = 400;
+// let carousel = document.querySelector(".carousel__wrap");
+// let total = (carousel.children.length - 10) * 140;
+// let screen = window.screen.availWidth;
 
-var item = document.querySelector(".carousel__item");
-var btnPrev = document.querySelector(".prev");
-var btnNext = document.querySelector(".next");
+// let item = document.querySelector(".carousel__item");
+// let btnPrev = document.querySelector(".prev");
+// let btnNext = document.querySelector(".next");
+
+// btnNext.addEventListener("click", function() {
+//   offset = offset + width;
+//   debugger;
+//   if (offset > total) {
+//     offset = total - screen;
+//   } else {
+//     carousel.style.left = -offset + "px";
+//   }
+// })
+
+// btnPrev.addEventListener("click", function() {
+//   offset = offset - width;
+//   debugger;
+//   if (offset < 0) {
+//     offset = total;
+//   } else {
+//     carousel.style.left = -offset + "px";
+//   }
+// })
+
+let position = 0;
+let slidesToShow = 11;
+let slidesToScroll = 3;
+let width = 140;
+const container = document.querySelector(".carousel");
+const track = document.querySelector(".carousel__wrap");
+let item = document.querySelector(".carousel__item");
+let total = track.children.length;
+let totalWidth = (total * width);
+let btnPrev = document.querySelector(".prev");
+let btnNext = document.querySelector(".next");
+let screen = window.screen.availWidth;
+// debugger;
+let itemQuantity = screen / width;
+let movePosition = (slidesToScroll * width);
+
 
 btnNext.addEventListener("click", function() {
-  offset = offset + width;
-  debugger;
-  if (offset > total) {
-    offset = total - screen;
+  let newTotal = -(totalWidth - (itemQuantity * width));
+  if (position <= newTotal) {
+    position = 0;
   } else {
-    carousel.style.left = -offset + "px";
+    position -= movePosition;
   }
+  changePosition();
+  // checkBtn();
+  
 })
 
 btnPrev.addEventListener("click", function() {
-  offset = offset - width;
-  debugger;
-  if (offset < 0) {
-    offset = total;
-  } else {
-    carousel.style.left = -offset + "px";
+  // checkBtn();
+  if (position >= 0) {
+    position = -(totalWidth - (itemQuantity * width));
+  } 
+  else {
+    position += movePosition;
   }
-});
+  changePosition();
+})
+
+function changePosition() {
+  track.style.left = position + "px";
+}
+
+function test() {
+  // debugger;
+  // let countSliders = -(total - itemQuantity + 1) * width;
+  let totalWidth = (total * width);
+  if (position === 0) {
+    // btnPrev.disabled = true;
+    position = totalWidth;
+  } 
+  // else {
+  //   btnPrev.disabled = false;
+  // }
+
+  // debugger;
+
+  // let countSliders = (total - slidesToShow) * width;
+  
+  if (position === totalWidth) {
+    position = 0;
+  } 
+  // else {
+  //   btnNext.disabled = false;
+  // }
+}
+
+// function checkBtn() {
+//   debugger;
+  
+  
+   
+// }
+
+
+// checkBtn();;

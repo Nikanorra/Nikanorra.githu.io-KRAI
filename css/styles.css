@@ -388,7 +388,8 @@ header {
   opacity: 1;
 }
 
-.carousel a img {
+.carousel a img,
+.carousel a span {
   width: 140px;
 }
 
