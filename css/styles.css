@@ -11,7 +11,6 @@ section {
 }
 
 .container {
-  max-width: 2000px !important;
   min-width: 320px;
 }
 
@@ -458,13 +457,6 @@ header {
   PROBLEMS
   ========================================
 */
-
-.problems {
-  min-height: 100vh;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
 
 .problems .sections-titles {
   margin-bottom: 25%;
@@ -1608,11 +1600,6 @@ table th {
   border-radius: 50%;
   padding: 10px;
   margin-bottom: 15px;
-}
-
-.section {
-  min-height: 100vh;
-  position: relative;
 }
 
 @media screen and (max-width: 1470px) {
