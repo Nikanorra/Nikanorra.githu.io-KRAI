@@ -10,19 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/clearfix.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.css">
-  <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/pagepiling.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>KRAI</title>
 </head>
 <body>
-
-    <!-- <div id="pagepiling">
-      <section class="section">Some section 1</section>
-      <section class="section">Some section 2</section>
-      <section class="section">Some section 3</section>
-      <section class="section">Some section 4</section>
-    </div> -->
-
   <header>
   <div class="menu">
     <div class="container">
@@ -388,7 +380,6 @@
         </div>
     </div>
   </div>
-</section>
   <div class="carousel">
   <!-- <div class="container"> -->
     <div class="carousel__wrap">
@@ -449,7 +440,9 @@
 
   <!-- </div> -->
 </div>
-  <section class="section value grey-bg" id="value">
+</section>
+  
+  <section class="section pp-scrollable value grey-bg" id="value">
   <div class="container">
     <h1 class="sections-titles wow slideInLeft">OUR VALUE-ADD</h1>
       <div class="arrow">
@@ -593,7 +586,7 @@
 
   </div>
 </section>
-  <section class="section what grey-right" id="what">
+  <section class="section pp-scrollable what grey-right" id="what">
   <div class="container">
     <div class="row">
       <div class="col-6">
@@ -729,7 +722,7 @@
     </div>
   </div>
 </section> 
-  <section class="section validation grey-left" id="validation">
+  <section class="section pp-scrollable validation grey-left" id="validation">
   <div class="container">
     <div class="row">
       <div class="col-xl-6 col-lg-12 grey-bg">
@@ -800,7 +793,7 @@
     </div>
   </div>
 </section>
-  <section class="section study grey-right" id="caseStudy">
+  <section class="section pp-scrollable study grey-right" id="caseStudy">
   <div class="container">
     <div class="row">
       <!-- <div class="col-md-5 col-12 grey-bg"> -->
@@ -915,7 +908,7 @@
 
   </div>
 </section>
-  <section class="section team" id="team">
+  <section class="section pp-scrollable team" id="team">
   <div class="container">
     <h2 class="sections-titles wow slideInLeft">LEADERSHIP TEAM</h2>
     <div class="row">
@@ -1044,7 +1037,7 @@
 
   </div>
 </section>
-  <section class="section summary" id="summary">
+  <section class="section pp-scrollable summary" id="summary">
   <div class="container">
     <h2 class="sections-titles pile wow slideInLeft">SUMMARY</h2>
     <h3 class="pile wow bounceIn">Our approach empowers you:</h3>
@@ -1085,17 +1078,13 @@
   </div>
 </section>
 
-  
- 
-  <!-- <script src="./library/wow.js"></script>
-  <script>
-    new WOW().init();
-  </script> -->
   <script src="./js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./library/pagepiling.js"></script>
   <script>
-    $('body').pagepiling();
+    $('body').pagepiling({
+      // setScrollingSpeed(700);
+    });
   </script>
   
 </body>
