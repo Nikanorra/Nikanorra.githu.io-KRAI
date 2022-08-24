@@ -1604,7 +1604,7 @@ table th {
 
 #pp-nav li .active span,
 .pp-slidesNav .active span {
-  background: #D4D838;
+  background: #0D83CC;
 }
 
 @media screen and (max-width: 1470px) {
@@ -1647,11 +1647,11 @@ table th {
 
 @media screen and (max-width: 1200px) {
   .proposition.grey-right {
-    background: transparent;
+    background: #fff;
   }
 
   .proposition.grey-right .col-xl-6.col-lg-12.grey-bg {
-    background: transparent;
+    background: #fff;
     min-height: auto;
   }
 
