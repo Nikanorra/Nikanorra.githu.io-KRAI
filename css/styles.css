@@ -1602,6 +1602,11 @@ table th {
   margin-bottom: 15px;
 }
 
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+  background: #D4D838;
+}
+
 @media screen and (max-width: 1470px) {
   .task {
     display: -webkit-box;

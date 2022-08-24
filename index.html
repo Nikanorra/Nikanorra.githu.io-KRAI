@@ -23,16 +23,15 @@
           <img src="./img/krai.svg" alt="KRAI">
           <img class="logo" data-wow-duration="1s" data-wow-delay="3s" src="./img/logo.svg" alt="logo">
         </a>
-        <ul class="flex menu__list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#problems">Problems</a></li>
-          <li><a href="#propositions">Propositions</a></li>
-          <li><a href="#value">Value</a></li>
-          <li><a href="#what">We do & we get</a></li>
-          <li><a href="#validation">Validation</a></li>
-          <li><a href="#caseStudy">Case study</a></li>
-          <li><a href="#team">Our team</a></li>
-          <li><a href="#summary">Summary</a></li>
+        <ul class="flex menu__list" id="menu">
+          <li><a data-anchor="#" href="#">Home</a></li>
+          <li><a data-anchor="propositions" href="#propositions">Propositions</a></li>
+          <li><a data-anchor="value" href="#value">Value</a></li>
+          <li><a data-anchor="what" href="#what">We do & we get</a></li>
+          <li><a data-anchor="validation" href="#validation">Validation</a></li>
+          <li><a data-anchor="caseStudy" href="#caseStudy">Case study</a></li>
+          <li><a data-anchor="team" href="#team">Our team</a></li>
+          <li><a data-anchor="summary" href="#summary">Summary</a></li>
         </ul>
       </nav>
 
@@ -383,7 +382,7 @@
   
 </section>
   
-  <section class="section value grey-bg" id="value">
+  <section class="section pp-scrollable value grey-bg" id="value">
   <div class="container">
     <h1 class="sections-titles wow slideInLeft">OUR VALUE-ADD</h1>
       <div class="arrow">
@@ -663,7 +662,7 @@
     </div>
   </div>
 </section> 
-  <section class="section validation grey-left" id="validation">
+  <section class="section pp-scrollable validation grey-left" id="validation">
   <div class="container">
     <div class="row">
       <div class="col-xl-6 col-lg-12 grey-bg">
@@ -1024,7 +1023,16 @@
   <script src="./library/pagepiling.js"></script>
   <script>
     $('body').pagepiling({
-      // setScrollingSpeed(700);
+      menu: '#menu',
+      navigation: {
+            'textColor': '#D4D838',
+            'bulletsColor': '#D4D838',
+            'position': 'right',
+            'tooltips': ['Home', 'Problems', 'Proposition', 'Value', 'What', 'Validation', 'Study', 'Team', 'Summary' ]
+      },
+      loopBottom: true,
+      loopTop: true,
+      anchors: ['','problems', 'propositions', 'value', 'what','validation', 'caseStudy','team', 'summary'],
     });
   </script>
   <script src="./js/script.js"></script>
