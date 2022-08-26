@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/clearfix.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/pagepiling.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>KRAI</title>
@@ -25,13 +26,13 @@
         </a>
         <ul class="flex menu__list" id="menu">
           <li><a data-anchor="#" href="#">Home</a></li>
-          <li><a data-anchor="propositions" href="#propositions">Propositions</a></li>
-          <li><a data-anchor="value" href="#value">Value</a></li>
-          <li><a data-anchor="what" href="#what">We do & we get</a></li>
-          <li><a data-anchor="validation" href="#validation">Validation</a></li>
-          <li><a data-anchor="caseStudy" href="#caseStudy">Case study</a></li>
-          <li><a data-anchor="team" href="#team">Our team</a></li>
-          <li><a data-anchor="summary" href="#summary">Summary</a></li>
+          <li><a data-anchor="#propositions" href="#propositions">Propositions</a></li>
+          <li><a data-anchor="#value" href="#value">Value</a></li>
+          <li><a data-anchor="#what" href="#what">We do & we get</a></li>
+          <li><a data-anchor="#validation" href="#validation">Validation</a></li>
+          <li><a data-anchor="#caseStudy" href="#caseStudy">Case study</a></li>
+          <li><a data-anchor="#team" href="#team">Our team</a></li>
+          <li><a data-anchor="#summary" href="#summary">Summary</a></li>
         </ul>
       </nav>
 
@@ -69,9 +70,9 @@
     </div>
   </section>
   <section class="section problems grey-left" id="problems">
-  <div class="container problems__wrap col-12">
+  <div class="container problems__wrap">
     <div class="row">
-      <div class="col-6 grey-bg">
+      <div class="col-md-6 col-sm-12 problems__right">
         <!-- <h1 class="sections-titles wow slideInLeft" id="problems">PROBLEM</h1> -->
         <h2 class="sections-titles wow slideInLeft" id="problems">
           Is your team facing any of these challenges?
@@ -80,38 +81,39 @@
         <img class="problems__bg" src="./img/problemsBg.png" alt="">
       </div>
   
-      <div class="col-6">
+      <div class="col-md-6 col-sm-12">
         <div class="circles">
-          <div class="circles__block-1 wow slideInRight" data-wow-duration="1s">
-            <div class="circle__1">51%</div>
-            <p>How do we design the right algorithm for the task?</p>
-          </div>
           <div class="line-top wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-          </div>
-  
-          <div class="circles__block-2 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.1s">
-            <div class="circle__2">53%</div>
-            <p>How do we implement and optimize our algorithm?</p>
           </div>
           <div class="line-middle wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"></div>
           <div class="line-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s"></div>
+
+          <div class="circle__wrap circles__block-1 wow slideInRight" data-wow-duration="1s">
+            <div class="circle__1">51%</div>
+            <p>How do we design the right algorithm for the task?</p>
+          </div>
+          
+          <div class="circle__wrap circles__block-2 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="circle__2">53%</div>
+            <p>How do we implement and optimize our algorithm?</p>
+          </div>
   
-          <div class="circles__block-3 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="circle__wrap circles__block-3 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="circle__3">30%</div>
             <p>How do we select the right hardware for the task?</p>
           </div>
   
-          <div class="circles__block-4 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="circle__wrap circles__block-4 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="circle__4">28%</div>
             <p>How do we test and validate our compute solution?</p>
           </div>        
   
-          <div class="circles__block-5 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+          <div class="circle__wrap circles__block-5 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="circle__5">20%</div>
           <p>How do we integrate our solution into the product?</p>
           </div>
   
-          <div class="circles__block-6 wow slideInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+          <div class="circle__wrap circles__block-6 wow slideInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
             <div class="circle__6">!</div>
             <div class="text">
               <p>You are not alone! These typically <br><span>hinder</span> Edge AI product development.</p>
@@ -848,7 +850,7 @@
 
   </div>
 </section>
-  <section class="section team" id="team">
+  <section class="section pp-scrollable team" id="team">
   <div class="container">
     <h2 class="sections-titles wow slideInLeft">LEADERSHIP TEAM</h2>
     <div class="row">
@@ -1018,24 +1020,27 @@
   </div>
 </section>
 
-
+  <script src="./js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./library/pagepiling.js"></script>
   <script>
     $('body').pagepiling({
       menu: '#menu',
+      scrollBar: true,
       navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#0D83CC',
-            'position': 'right',
+            'textColor': 'rgb(197 194 194 / 64%)',
+            'bulletsColor': 'rgb(197 194 194 / 64%)',
             'tooltips': ['Home', 'Problems', 'Proposition', 'Value', 'What', 'Validation', 'Study', 'Team', 'Summary' ]
       },
       loopBottom: true,
       loopTop: true,
       anchors: ['','problems', 'propositions', 'value', 'what','validation', 'caseStudy','team', 'summary'],
+      onLeave: function(){
+          new WOW().init();
+      }
     });
   </script>
-  <script src="./js/script.js"></script>
+  
   
 </body>
 </html>

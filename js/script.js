@@ -557,21 +557,25 @@ document.addEventListener("click", function(e) {
 })
 ;
 let problemSectionHeigh = document.getElementById("problems");
-// let circles = document.querySelector(".circles");
-// let items = circles.children;
-let circles1 = document.querySelector(".circles__block-1");
-let circles2 = document.querySelector(".circles__block-2");
-let circles3 = document.querySelector(".circles__block-3");
-let circles4 = document.querySelector(".circles__block-4");
-let circles5 = document.querySelector(".circles__block-5");
-let circles6 = document.querySelector(".circles__block-6");
-let hight = circles1.scrollHeight + circles2.scrollHeight + circles3.scrollHeight + circles4.scrollHeight + circles5.scrollHeight + circles6.scrollHeight;
+let col = document.querySelector(".col-md-6.col-sm-12.problems__right");
+let circlesSection = document.querySelector(".circles");
+let circles = document.querySelectorAll(".circle__wrap");
+let circlesHeight = circles[0].clientHeight;
 
+let hight = circles.length * circlesHeight;
 
 function newProblemSectionHeigh() {
-  problemSectionHeigh.style.height = hight + "px";
+  if (window.screen.height > hight) {
+    hight = window.screen.height;
+  } 
+  if (window.screen.width >= 768) {
+    problemSectionHeigh.style.height = hight + "px";
+    col.style.height = hight + "px";
+  } else {
+    col.style.height = "auto";
+    circlesSection.style.height = (hight*0.8) + "px";
+  }
 }
-
 
 newProblemSectionHeigh();
 ;
