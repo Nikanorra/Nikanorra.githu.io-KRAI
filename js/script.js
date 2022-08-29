@@ -577,7 +577,18 @@ function newProblemSectionHeigh() {
   }
 }
 
+let sections = document.querySelectorAll("section");
+function sectionHeight() {
+  sections.forEach(function(item, i, arr) {
+    debugger;
+    if (item.clientHeight > window.innerHeight) {
+      item.classList.add("pp-scrollable");
+    }
+  });
+}
+
 newProblemSectionHeigh();
+sectionHeight();
 ;
 // let offset = 0;
 // let width = 400;

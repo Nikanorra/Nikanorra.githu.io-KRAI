@@ -32,10 +32,11 @@ img {
   text-transform: uppercase;
   padding-top: 45px;
   line-height: 3.5rem;
+  font-size: calc(14px + 0.5729166667vw);
 }
 
 .sections-slogans {
-  font-size: 23px;
+  font-size: calc(11px + 0.3645833333vw);
   font-weight: 700;
   color: #000;
   padding-bottom: 50px;
@@ -50,7 +51,7 @@ img {
 }
 
 .sections-desc {
-  font-size: calc(12px + 0.6770833333vw);
+  font-size: calc(11px + 0.3645833333vw);
 }
 
 .sections-desc p {
@@ -647,10 +648,6 @@ header {
   ========================================
 */
 
-.proposition {
-  overflow: hidden;
-}
-
 .proposition .flex {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -662,6 +659,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .proposition .proposition__list p {
@@ -1356,7 +1354,6 @@ header {
 
 .validation.grey-left .validation__sections p {
   color: #000;
-  font-size: calc(10px + 0.78125vw);
   margin-bottom: 10px;
 }
 
@@ -1703,6 +1700,11 @@ table th {
     display: block;
   }
 
+  .validation.grey-left .grey-bg,
+  .validation.grey-left [class*=col-].grey-bg {
+    min-height: auto;
+  }
+
   .validation.grey-left .col-xl-5.col-lg-12.grey-bg {
     overflow: visible;
   }
@@ -1714,13 +1716,6 @@ table th {
 
   .validation.grey-left .validation__sections p {
     color: #EAE6E5;
-  }
-
-  .validation.grey-left .container {
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 0;
-    padding-left: 0;
   }
 
   .validation.grey-left .row {
@@ -1943,10 +1938,6 @@ table th {
 }
 
 @media screen and (max-width: 850px) {
-  .sections-titles {
-    font-size: calc(18px + 0.2604166667vw);
-  }
-
   .value .arrow {
     top: 85px;
   }
@@ -2199,11 +2190,5 @@ table th {
   .proposition .proposition__table .content .parametrs li .units {
     font-weight: 600;
     font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .what .sections-titles {
-    font-size: calc(12px + 0.6770833333vw);
   }
 }
