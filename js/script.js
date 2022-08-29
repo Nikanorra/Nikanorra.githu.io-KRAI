@@ -565,17 +565,17 @@ let circlesHeight = circles[0].clientHeight;
 let hight = circles.length * circlesHeight;
 
 function newProblemSectionHeigh() {
-  debugger;
-  if (window.screen.height > hight) {
-    hight = window.screen.height;
-  } 
+  // debugger;
   if (window.screen.width >= 768) {
-    problemSectionHeigh.style.height = (hight*0.8) + "px";
-    col.style.height = (hight*0.8) + "px";
+    if (window.screen.height > hight) {
+      hight = window.screen.height;
+    } else {
+      problemSectionHeigh.style.height = hight + "px";
+      col.style.height = hight + "px";
+    }
   } else {
-    col.style.height = "auto";
-    debugger;
-    circlesSection.style.height = (hight*0.8) + "px";
+    col.style.height = "50px";
+    circlesSection.style.height = hight + "px";
   }
 }
 
