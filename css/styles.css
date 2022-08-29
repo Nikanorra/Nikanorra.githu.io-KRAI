@@ -1317,7 +1317,6 @@ header {
   background: -o-linear-gradient(left, #021526 0%, #021526 50%, #fff 50%, #fff 100%);
   background: linear-gradient(90deg, #021526 0%, #021526 50%, #fff 50%, #fff 100%);
   color: #EAE6E5;
-  overflow: hidden;
 }
 
 .validation.grey-left img.mobile {

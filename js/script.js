@@ -565,14 +565,16 @@ let circlesHeight = circles[0].clientHeight;
 let hight = circles.length * circlesHeight;
 
 function newProblemSectionHeigh() {
+  debugger;
   if (window.screen.height > hight) {
     hight = window.screen.height;
   } 
   if (window.screen.width >= 768) {
-    problemSectionHeigh.style.height = hight + "px";
-    col.style.height = hight + "px";
+    problemSectionHeigh.style.height = (hight*0.8) + "px";
+    col.style.height = (hight*0.8) + "px";
   } else {
     col.style.height = "auto";
+    debugger;
     circlesSection.style.height = (hight*0.8) + "px";
   }
 }
@@ -580,7 +582,7 @@ function newProblemSectionHeigh() {
 let sections = document.querySelectorAll("section");
 function sectionHeight() {
   sections.forEach(function(item, i, arr) {
-    debugger;
+    // debugger;
     if (item.clientHeight > window.innerHeight) {
       item.classList.add("pp-scrollable");
     }
