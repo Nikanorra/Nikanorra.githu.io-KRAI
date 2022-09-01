@@ -1497,9 +1497,17 @@ table th {
 */
 
 .team {
-  background: -o-linear-gradient(top, #fff 0%, #fff 265px, #eae6e5 265px, #eae6e5 100%);
-  background: linear-gradient(180deg, #fff 0%, #fff 265px, #eae6e5 265px, #eae6e5 100%);
+  background: #eae6e5;
   height: 100%;
+}
+
+.team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 285px;
+  width: 100%;
+  background: #fff;
 }
 
 .team [class*=col-] {
@@ -1790,6 +1798,10 @@ footer .footer__contacts a {
 
   .validation.grey-left .col-xl-5.col-lg-12.grey-bg {
     min-height: auto;
+  }
+
+  .team::before {
+    height: 250px;
   }
 }
 
@@ -2123,19 +2135,8 @@ footer .footer__contacts a {
     padding-bottom: 0;
   }
 
-  .team {
-    background: #eae6e5;
-  }
-
-  .team .team__portrait {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    margin-top: 50px;
-  }
-
-  .team .team__desc .team__contacts {
-    margin-top: 20px;
+  .team::before {
+    display: none;
   }
 }
 
