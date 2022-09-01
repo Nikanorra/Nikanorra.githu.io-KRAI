@@ -160,12 +160,14 @@ header {
   transition: 2s ease-out;
 }
 
-.menu nav.flex .menu__list li:hover {
+.menu nav.flex .menu__list li:hover,
+.menu nav.flex .menu__list li.active {
   background: #fff;
   cursor: pointer;
 }
 
-.menu nav.flex .menu__list li:hover a {
+.menu nav.flex .menu__list li:hover a,
+.menu nav.flex .menu__list li.active a {
   color: #000;
 }
 
@@ -483,6 +485,10 @@ header {
 .problems .container.problems__wrap.col-md-12,
 .problems .container.problems__wrap.col-md-12 .col-md-4 {
   position: static !important;
+}
+
+.col-md-6.col-sm-12.problems__right {
+  height: 100vh;
 }
 
 .problems__bg {
@@ -1631,6 +1637,17 @@ footer img:first-child {
 footer a {
   color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.3;
+}
+
+footer .footer__list li {
+  margin-bottom: 10px;
 }
 
 footer .footer__link {
@@ -1639,6 +1656,11 @@ footer .footer__link {
   border-right: 1px solid #fff;
   padding: 0 10px;
   margin: 0 10px;
+}
+
+footer .footer__contacts a {
+  display: block;
+  margin-bottom: 10px;
 }
 
 #pp-nav li .active span,

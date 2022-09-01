@@ -555,7 +555,29 @@ document.addEventListener("click", function(e) {
     menu.classList.remove('active');
   }
 })
+
 ;
+// active menu
+// debugger;
+// document.addEventListener("scroll", function(){
+//   debugger;
+//   let scrollDistance = window.scrollY;
+//   debugger;
+//   document.querySelector(".section").forEach(el, i => {
+//     debugger;
+//     if (el.offsetTop - document.querySelector("header").clientHeight <= scrollDistance) {
+//       document.getElementById("menu li").forEach((el) => {
+//         debugger;
+//         if (el.classList.contains("active")) {
+//           debugger;
+//           el.classList.remove("active");
+//         }
+//       })
+//     }
+//   });
+//   debugger;
+//   document.getElementById("menu li")[i].classList.add("active");
+// });
 let htmlEl = document.getElementById("currentYear");
 let date = new Date();
 let currentYear = date.getFullYear();
