@@ -375,19 +375,24 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.2;
+  max-width: 140px;
+  min-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel a img,
+.carousel a span {
+  width: 100px;
   -webkit-transition: 0.7s;
   -o-transition: 0.7s;
   transition: 0.7s;
   cursor: pointer;
 }
 
-.carousel a:hover {
-  opacity: 1;
-}
-
-.carousel a img,
-.carousel a span {
+.carousel a img:hover,
+.carousel a span:hover {
   width: 140px;
 }
 
@@ -769,7 +774,7 @@ header {
 
 .proposition .proposition__table .content .task.gradient div p {
   background: transparent;
-  font-size: 11px;
+  font-size: 8px;
   font-weight: 600;
 }
 
@@ -780,6 +785,7 @@ header {
   -webkit-transform: translateX(-25%);
       -ms-transform: translateX(-25%);
           transform: translateX(-25%);
+  width: 20px;
 }
 
 .proposition .proposition__table .content .task .task__title {
@@ -787,7 +793,7 @@ header {
 }
 
 .proposition .proposition__table .content .task > p {
-  height: 25px;
+  height: 35px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 11px;
@@ -836,13 +842,12 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 7px;
-  padding-right: 7px;
 }
 
 .proposition .proposition__table .content .parametrs {
   width: 78%;
   padding: 10px 0 10px 5px;
-  font-size: 12px;
+  font-size: 10px;
   position: relative;
 }
 
@@ -858,7 +863,7 @@ header {
 .proposition .proposition__table .content .parametrs > p {
   margin-bottom: 20px;
   font-weight: 700;
-  height: 25px;
+  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -996,7 +1001,7 @@ header {
 
 .value .arrow.flip {
   width: 40px;
-  height: 85%;
+  height: 85vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1062,7 +1067,7 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 50%;
+  height: 40vh;
   width: 92%;
 }
 
@@ -1331,6 +1336,7 @@ header {
 .validation.grey-left .grey-bg,
 .validation.grey-left [class*=col-].grey-bg {
   background: #021526;
+  overflow: hidden;
 }
 
 .validation.grey-left .col-xl-5.col-lg-12.grey-bg {
@@ -1367,7 +1373,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 60px 0;
 }
@@ -1598,6 +1604,43 @@ table th {
   margin-bottom: 15px;
 }
 
+/*
+  ========================================
+  FOOTER
+  ========================================
+*/
+
+footer {
+  background: #000;
+}
+
+footer .row:first-child {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+footer img {
+  width: 100px;
+}
+
+footer img:first-child {
+  height: 50px;
+}
+
+footer a {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .footer__link {
+  display: inline-block;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
 #pp-nav li .active span,
 .pp-slidesNav .active span {
   background: rgba(197, 194, 194, 0.64);
@@ -1721,10 +1764,6 @@ table th {
   .validation.grey-left .row {
     margin-right: 0;
     margin-left: 0;
-  }
-
-  .validation.grey-left .validation__partners {
-    width: 100%;
   }
 
   .validation.grey-left .col-xl-5.col-lg-12.grey-bg {

@@ -556,6 +556,11 @@ document.addEventListener("click", function(e) {
   }
 })
 ;
+let htmlEl = document.getElementById("currentYear");
+let date = new Date();
+let currentYear = date.getFullYear();
+htmlEl.innerHTML = "© " + currentYear + " KRAI";
+;
 let problemSectionHeigh = document.getElementById("problems");
 let col = document.querySelector(".col-md-6.col-sm-12.problems__right");
 let circlesSection = document.querySelector(".circles");
