@@ -105,10 +105,6 @@ img {
   font-size: calc(8px + 0.5208333333vw);
 }
 
-#pp-nav.right {
-  right: 0;
-}
-
 /*
   ========================================
   HEADER
@@ -2323,6 +2319,12 @@ footer .sections-slogans {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #pp-nav.right {
+    right: 0;
   }
 }
 
