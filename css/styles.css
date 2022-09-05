@@ -148,7 +148,8 @@ header {
 .menu nav.flex .menu__list li {
   color: #fff;
   line-height: 30px;
-  padding: 0 1vw;
+  padding: 0 10px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,15 +489,9 @@ header {
 }
 
 .problems__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
   height: 100%;
-}
-
-.problems .container.problems__wrap.col-md-12,
-.problems .container.problems__wrap.col-md-12 .col-md-4 {
-  position: static !important;
+  overflow: hidden;
 }
 
 .col-md-6.col-sm-12.problems__right {
@@ -504,11 +499,11 @@ header {
 }
 
 .problems__bg {
-  height: 40vh;
+  height: 50vh;
   width: auto;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -15%;
+  left: -25%;
 }
 
 .circles__block-1,
@@ -678,12 +673,16 @@ header {
           justify-content: start;
 }
 
+.proposition .proposition__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .proposition .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .proposition .proposition__list p {
@@ -1343,6 +1342,11 @@ header {
   color: #EAE6E5;
 }
 
+.validation.grey-left .validation__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .validation.grey-left img.mobile {
   display: none;
 }
@@ -1354,13 +1358,11 @@ header {
 .validation.grey-left .grey-bg,
 .validation.grey-left [class*=col-].grey-bg {
   background: #021526;
-  overflow: hidden;
 }
 
 .validation.grey-left .col-xl-5.col-lg-12.grey-bg {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .validation.grey-left .col-xl-5.col-lg-12.grey-bg .proposition__bg {
@@ -1417,6 +1419,7 @@ header {
 .table-wrap {
   margin-top: 50px;
   margin-bottom: 10%;
+  margin-left: 10px;
 }
 
 .study .metrics {
@@ -1483,7 +1486,7 @@ table tr {
 
 table th,
 table td {
-  padding: 10px;
+  padding: 10px 0;
   font-size: calc(12px + 0.6770833333vw);
 }
 
@@ -1496,6 +1499,7 @@ table th {
 .study__remark {
   font-size: calc(8px + 0.5208333333vw);
   margin-bottom: 50px;
+  margin-left: 10px;
 }
 
 .study__remark p {
@@ -1637,6 +1641,7 @@ table th {
 */
 
 footer {
+  min-height: 100vh;
   background: #000;
 }
 
@@ -1648,10 +1653,11 @@ footer .row:first-child {
 
 footer img {
   width: 100px;
+  padding-top: 20px;
 }
 
 footer img:first-child {
-  height: 50px;
+  width: 120px;
 }
 
 footer a {
@@ -1681,6 +1687,11 @@ footer .footer__link {
 footer .footer__contacts a {
   display: block;
   margin-bottom: 10px;
+}
+
+footer .sections-slogans {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 #pp-nav li .active span,
@@ -2221,6 +2232,15 @@ footer .footer__contacts a {
   .circle__5,
   .circle__6 {
     font-size: 15px;
+  }
+
+  footer img:first-child {
+    width: 80px;
+  }
+
+  footer .sections-slogans {
+    margin-top: 0;
+    padding-top: 20px;
   }
 }
 
