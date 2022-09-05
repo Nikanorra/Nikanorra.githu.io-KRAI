@@ -105,6 +105,10 @@ img {
   font-size: calc(8px + 0.5208333333vw);
 }
 
+#pp-nav.right {
+  right: 0;
+}
+
 /*
   ========================================
   HEADER
