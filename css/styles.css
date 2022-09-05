@@ -2338,6 +2338,24 @@ footer .sections-slogans {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .scenario__block {
+    height: 47vh;
+  }
+
+  .scenario__tables {
+    height: 98%;
+  }
+
+  .sections-desc {
+    font-size: 10px;
+  }
+
+  .arrow.flip {
+    height: 100vh !important;
+  }
+}
+
 @media screen and (max-width: 495px) {
   .scenario__title {
     padding: 5px 5px 0;
