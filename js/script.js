@@ -1,4 +1,17 @@
-// new WOW().init();
+
+jQuery(function($) {
+  var path = window.location.href; 
+  var valueBeforeHash = path.split('#')[0];
+  $('ul a').each(function() {
+    let newHref = this.href.split('#')[0];
+    if (newHref === valueBeforeHash) {
+      debugger;
+      $(this).addClass('active');
+    }
+  });
+});
+
+;
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -3018,6 +3031,9 @@ $('.center').slick({
   infinite: true,
   nextArrow: '<img class="slick-prev" src="img/arrow/arrow-prev.png" alt="arrow left">',
   prevArrow: '<img class="slick-next" src="img/arrow/arrow-next.png" alt="arrow right">',
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
   responsive: [
     {
       breakpoint: 768,
@@ -3037,13 +3053,13 @@ $('.center').slick({
     }
   ]
 });;
-let withTeamSection = document.documentElement.clientHeight;
-let elem = document.getElementById('team')
+// // let withTeamSection = document.documentElement.clientHeight;
+// let elem = document.getElementById('team')
 
-function equating() {
-  elem.style.width = withTeamSection + "px";
-  // `${withTeamSection}px`;
-}
+// function equating() {
+//   elem.style.width = withTeamSection + "px";
+// }
 
-equating();
+// equating();
 ;
+
